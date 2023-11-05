@@ -1,0 +1,1888 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.29)  5 NOV 2023 15:51
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**django.tex
+(./django.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/paper/paper.cls
+Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
+\hours=\count185
+\minutes=\count186
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\beforetitlespace=\skip47
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\exampleindent=\skip48
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box50
+) (./django.aux)
+\openout1 = `django.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+
+./django.tex:15: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ele cuidar da maioria dos detalhes intrı́
+                                                secos do desenvolvimento web...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:16: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 uma das suas caracterı́
+                              sticas, é que ele é de uso livre, e possui c...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 32.
+./django.tex:33: You can't use `macro parameter character #' in math mode.
+l.33 #
+       A depender da plafatorma de desenvolvimento escolhida,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:34: You can't use `macro parameter character #' in math mode.
+l.34 #
+       devemos ativar o ambiente virtual de forma diferente,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:35: You can't use `macro parameter character #' in math mode.
+l.35 #
+       nesse caso, iremos instruir com base nas plataformas
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:36: You can't use `macro parameter character #' in math mode.
+l.36 #
+       MacOs e Linux/Unix2 Instalação e inicialização do framework
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 36.
+
+./django.tex:36: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.36 # MacOs e Linux/Unix2 Instalaç
+                                    ão e inicialização do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 36.
+
+./django.tex:36: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.36 # MacOs e Linux/Unix2 Instalaçã
+                                      o e inicialização do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 36.
+
+./django.tex:36: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.36 ... e Linux/Unix2 Instalação e inicializaç
+                                                  ão do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 36.
+
+./django.tex:36: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.36 ... Linux/Unix2 Instalação e inicializaçã
+                                                  o do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./django.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38 $ source ./nome_
+                     ambiente_virtual/bin/activate
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 46.
+
+./django.tex:46: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.46 ... final do comando temos por exemplo a opç
+                                                  ão de adicionar o
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 46.
+
+./django.tex:46: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.46 ...inal do comando temos por exemplo a opçã
+                                                  o de adicionar o
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 47.
+
+./django.tex:47: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.47 projeto dentro de um diretó
+                                 rio especı́fico que será criado para o p...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 47.
+
+
+./django.tex:47: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 projeto dentro de um diretório especı́
+                                              fico que será criado para o p...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 47.
+
+./django.tex:47: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.47 ...o de um diretório especı́fico que será
+                                                   criado para o projeto ou
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 48.
+
+./django.tex:48: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.48 dentro do diretó
+                      rio que o comando está sendo executado, para definir ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 48.
+
+./django.tex:48: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.48 dentro do diretório que o comando está
+                                              sendo executado, para definir ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 49.
+
+./django.tex:49: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.49 ... adicionar um ponto, respectivamente. Apó
+                                                  s
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 50.
+
+./django.tex:50: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.50 essas configuraç
+                      ões, instalações e comandos, podemos usbir o Django...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 50.
+
+./django.tex:50: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.50 essas configuraçõ
+                        es, instalações e comandos, podemos usbir o Django...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 50.
+
+./django.tex:50: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.50 essas configurações, instalaç
+                                     ões e comandos, podemos usbir o Django...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 50.
+
+./django.tex:50: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.50 essas configurações, instalaçõ
+                                       es e comandos, podemos usbir o Django...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 52.
+
+./django.tex:52: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.52 nos comunica se a instalaç
+                                ão e criação do nosso projeto foi feito d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 52.
+
+./django.tex:52: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.52 nos comunica se a instalaçã
+                                  o e criação do nosso projeto foi feito d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 52.
+
+./django.tex:52: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.52 nos comunica se a instalação e criaç
+                                            ão do nosso projeto foi feito d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 52.
+
+./django.tex:52: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.52 nos comunica se a instalação e criaçã
+                                              o do nosso projeto foi feito d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+./django.tex:59: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 tura especı́
+                   fica, que vai ser destrinchada a seguir:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:62: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...ntro do nosso projeto possuem caracterı́
+                                                  sticas
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:72: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 o inı́
+             cio. Outras bases de dados podem substituir a mesma posterior-
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:80: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...nt para servidores web que sã ocompatı́
+                                                  veis
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:82: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...Funciona como o WSGI, mas de forma assı́
+                                                  ncrona
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:90: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...m configurações padrões, que são mı́
+                                                  nimas
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:94: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 O funcionamento do framework está intrı́
+                                                secamento ligado ao seu arqu...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:97: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 teremos logo de inı́
+                           cio, a nossa ligação com o banco de dados, que ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:146: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 ...), mas que é usada para ver as estatı́
+                                                  ticas de acesso e uso do s...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 152.
+
+./django.tex:152: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.152 mais fá
+              cil.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 153.
+
+./django.tex:153: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.153 3Criando nossas primeiras aplicaç
+                                        ões Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 153.
+
+./django.tex:153: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.153 3Criando nossas primeiras aplicaçõ
+                                          es Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 154.
+
+./django.tex:154: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.154 3.1Arquivo views.py e configuraç
+                                       ão de urls
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 154.
+
+./django.tex:154: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.154 3.1Arquivo views.py e configuraçã
+                                         o de urls
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 155.
+
+./django.tex:155: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.155 Quando criarmos o app da nossa aplicaç
+                                             ão, temos dentro dele um arquivo
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 155.
+
+./django.tex:155: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.155 Quando criarmos o app da nossa aplicaçã
+                                               o, temos dentro dele um arquivo
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 156.
+
+./django.tex:156: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.156 em particular que nã
+                           o está no projeto como um todo, que é o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 156.
+
+./django.tex:156: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.156 em particular que não está
+                                   no projeto como um todo, que é o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 156.
+
+./django.tex:156: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.156 ...ão está no projeto como um todo, que é
+                                                   o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 157.
+
+./django.tex:157: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.157 ...odemos colocar as views da nossa aplicaç
+                                                  ão, e per-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 157.
+
+./django.tex:157: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.157 ...emos colocar as views da nossa aplicaçã
+                                                  o, e per-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 158.
+
+./django.tex:158: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.158 ...nto mais clean e melhor da nossa aplicaç
+                                                  ão, além do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 158.
+
+./django.tex:158: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.158 ...o mais clean e melhor da nossa aplicaçã
+                                                  o, além do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 158.
+
+./django.tex:158: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.158 ...clean e melhor da nossa aplicação, alé
+                                                  m do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 161.
+
+./django.tex:161: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.161 Temos també
+                  m que podemos aninhar as urls e portanto as views da nossa
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 162.
+
+./django.tex:162: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.162 aplicaç
+              ão. Para isso, devemos ir dentro do nosso app e es pecificar ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 162.
+
+./django.tex:162: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.162 aplicaçã
+                o. Para isso, devemos ir dentro do nosso app e es pecificar ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 163.
+
+./django.tex:163: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.163 e criar o arquivo de urls.py, alé
+                                        m de configurar as urls dentro do ar...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 170.
+
+./django.tex:170: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.170 ...’)),3 Criando nossas primeiras aplicaç
+                                                  ões Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 170.
+
+./django.tex:170: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.170 ...�)),3 Criando nossas primeiras aplicaçõ
+                                                  es Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 172.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 177.
+
+./django.tex:177: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.177 return HttpResponse("retornando da pá
+                                            gina inicial do blog")
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 182.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 182.
+
+./django.tex:182: Double superscript.
+<recently read> ^
+                 
+l.182 path(’’
+                 , views.blog),
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
+
+./django.tex:187: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.187 A internet tem como padrã
+                                o para a criação e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 187.
+
+./django.tex:187: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.187 A internet tem como padrão para a criaç
+                                               ão e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
+
+./django.tex:187: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.187 A internet tem como padrão para a criaçã
+                                                 o e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 187.
+
+./django.tex:187: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.187 ...mo padrão para a criação e visualizaç
+                                                  ão de sites, o uso
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
+
+./django.tex:187: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.187 ... padrão para a criação e visualizaçã
+                                                  o de sites, o uso
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 188.
+
+./django.tex:188: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.188 de trê
+             s tecnologias principais, o HTML, CSS e Javascript, sendo as duas
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 189.
+
+./django.tex:189: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.189 primeiras linguangens de marcaç
+                                      ão e a tereceira uma linguagem de pro-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 189.
+
+./django.tex:189: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.189 primeiras linguangens de marcaçã
+                                        o e a tereceira uma linguagem de pro-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 190.
+
+./django.tex:190: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.190 gramaç
+             ão. Com isso, para servimos esses tipos de arquivos, precisamo...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 190.
+
+./django.tex:190: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.190 gramaçã
+               o. Com isso, para servimos esses tipos de arquivos, precisamo...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 191.
+
+./django.tex:191: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.191 pecificar a existê
+                         ncia, e a entrega deles para o request. Para fazerm...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 192.
+
+./django.tex:192: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.192 precisamos usar a funç
+                             ão de render do django, como mostrado a seguir:
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 192.
+
+./django.tex:192: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.192 precisamos usar a funçã
+                               o de render do django, como mostrado a seguir:
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 196.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 196.
+
+./django.tex:198: Missing $ inserted.
+<inserted text> 
+                $
+l.198 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (789.81213pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 python \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 mvenvnome[]mbiente[]irtualAdependerdaplafatormadedesenvolvimentoescolhida; devemosativaroambientevirtualdeformadiferente; nessecaso; iremosinstruircombasenasplataformasMacOseLinux=Unix\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 Instala[][]oeinicializa[][]odoframework\OT1/cmr/m/n/10 2$
+ []
+
+
+Overfull \hbox (2192.39565pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 adminstartprojectnomeProjetoNapartefinaldocomandotemosporexemploaop[][]odeadicionaroprojetodentrodeumdiret[]rioespec\OT1/cmr/m/n/10 ^^P\OML/cmm/m/it/10 ficoqueser[]criadoparaoprojetooudentrododiret[]rioqueocomandoest[]sendoexecutado; paradefinirisso; devemosdeixarembranco; ouadicionarumponto; respectivamente:Ap[]sessasconfigura[][]es; instala[][]esecomandos; podemosusbiroDjangosemsequernecessitarcriaralgumainterface; poiselepossuiumatelainicial; quenoscomunicaseainstala[][]oecria[][]odonossoprojetofoifeitodemaneiracorreta:Paraisso; podemosusaroseguintecomando \OT1/cmr/m/n/10 :$python
+ []
+
+
+Overfull \hbox (119.72151pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 python\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 manage:pystartappnome[]o[]ppQuandocriarmosnossoapp; teremosnumanovapastaquecomelater \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1258.24336pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 emosassimumanovaformadecriarnossosite; eorganizareledamaneiramaisf[]cil:\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 Criandonossasprimeirasaplica[][]esWeb\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 Arquivoviews:pyeconfigura[][]odeurlsQuandocriarmosoappdanossaaplica[][]o; temosdentrodeleumarquivoemparticularquen[]oest[]noprojetocomoumtodo; que[]oarquivodeviews:py; dentrodelepodemoscolocarasviewsdanossaaplica[][]o; eper \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1344.69827pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 mitirumfuncionamentomaiscleanemelhordanossaaplica[][]o; al[]mdofatodequenoarquivodeurls; organizarmoseleapenascomospathsdasnossasurls:Temostamb[]mquepodemosaninharasurlseportantoasviewsdanossaaplica[][]o:Paraisso; devemosirdentrodonossoappeespecificarasviewsecriaroarquivodeurls:py; al[]mdeconfigurarasurlsdentrodoarquivodoprojetoemsim; comoaseguir \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (96.37918pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 projeto=urls:pyfromdjango:contribimportadminfromdjango:urlsimportpath; includeurlpatterns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (589.6108pt too wide) in paragraph at lines 5--198
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 =[]; include\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 home:urls[]\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 blog=[]; include\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 blog:urls[]\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 Criandonossasprimeirasaplica[][]esWeb\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 admin=[]; admin:site:urls\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 blog=views:pyfromdjango:httpimportHttpResponsedefblog\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (242.7035pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 returnHttpResponse\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 retornandodap[]ginainicialdoblog\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 blog=urls:pyfromdjango:urlsimportpathfrom:importviewsurlspatterns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (961.00003pt too wide) in paragraph at lines 5--198
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([][]\OML/cmm/m/it/10 ; views:blog\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ]3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 Renderizandotemplates; html; econfigurandooINSTALLEDAPPSAinternettemcomopadr[]oparaacria[][]oevisualiza[][]odesites; ousodetr[]stecnologiasprincipais; oHTML; CSSeJavascript; sendoasduasprimeiraslinguangensdemarca[][]oeatereceiraumalinguagemdepro \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (583.13235pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 grama[][]o:Comisso; paraservimosessestiposdearquivos; precisamoses \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 pecificaraexist[]ncia; eaentregadelesparaorequest:Parafazermosisso; precisamosusarafun[][]oderenderdodjango; comomostradoaseguir \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (39.62497pt too wide) in paragraph at lines 5--198
+\OML/cmm/m/it/10 fromdjango:shortcutsimportrenderdefhome\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request\OT1/cmr/m/n/10 ) : \OML/cmm/m/it/10 returnrender\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request;[] nome \OMS/cmsy/m/n/10 ^^@
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2]
+
+./django.tex:211: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ele cuidar da maioria dos detalhes intrı́
+                                                 secos do desenvolvimento we...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:212: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 uma das suas caracterı́
+                               sticas, é que ele é de uso livre, e possui ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+./django.tex:229: You can't use `macro parameter character #' in math mode.
+l.229 #
+        A depender da plafatorma de desenvolvimento escolhida,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:230: You can't use `macro parameter character #' in math mode.
+l.230 #
+        devemos ativar o ambiente virtual de forma diferente,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:231: You can't use `macro parameter character #' in math mode.
+l.231 #
+        nesse caso, iremos instruir com base nas plataformas
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./django.tex:232: You can't use `macro parameter character #' in math mode.
+l.232 #
+        MacOs e Linux/Unix2 Instalação e inicialização do framework
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 232.
+
+./django.tex:232: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.232 # MacOs e Linux/Unix2 Instalaç
+                                     ão e inicialização do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 232.
+
+./django.tex:232: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.232 # MacOs e Linux/Unix2 Instalaçã
+                                       o e inicialização do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 232.
+
+./django.tex:232: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.232 ...e Linux/Unix2 Instalação e inicializaç
+                                                  ão do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 232.
+
+./django.tex:232: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.232 ...Linux/Unix2 Instalação e inicializaçã
+                                                  o do framework
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./django.tex:234: Missing $ inserted.
+<inserted text> 
+                $
+l.234 $ source ./nome_
+                      ambiente_virtual/bin/activate
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 242.
+
+./django.tex:242: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.242 ...final do comando temos por exemplo a opç
+                                                  ão de adicionar o
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 242.
+
+./django.tex:242: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.242 ...nal do comando temos por exemplo a opçã
+                                                  o de adicionar o
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 243.
+
+./django.tex:243: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.243 projeto dentro de um diretó
+                                  rio especı́fico que será criado para o ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 243.
+
+
+./django.tex:243: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 projeto dentro de um diretório especı́
+                                               fico que será criado para o ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 243.
+
+./django.tex:243: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.243 ... de um diretório especı́fico que será
+                                                   criado para o projeto ou
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 244.
+
+./django.tex:244: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.244 dentro do diretó
+                       rio que o comando está sendo executado, para definir...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 244.
+
+./django.tex:244: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.244 dentro do diretório que o comando está
+                                               sendo executado, para definir...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 245.
+
+./django.tex:245: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.245 ...adicionar um ponto, respectivamente. Apó
+                                                  s
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 246.
+
+./django.tex:246: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.246 essas configuraç
+                       ões, instalações e comandos, podemos usbir o Djang...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 246.
+
+./django.tex:246: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.246 essas configuraçõ
+                         es, instalações e comandos, podemos usbir o Djang...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 246.
+
+./django.tex:246: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.246 essas configurações, instalaç
+                                      ões e comandos, podemos usbir o Djang...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 246.
+
+./django.tex:246: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.246 essas configurações, instalaçõ
+                                        es e comandos, podemos usbir o Djang...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 248.
+
+./django.tex:248: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.248 nos comunica se a instalaç
+                                 ão e criação do nosso projeto foi feito ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 248.
+
+./django.tex:248: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.248 nos comunica se a instalaçã
+                                   o e criação do nosso projeto foi feito ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 248.
+
+./django.tex:248: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.248 nos comunica se a instalação e criaç
+                                             ão do nosso projeto foi feito ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 248.
+
+./django.tex:248: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.248 nos comunica se a instalação e criaçã
+                                               o do nosso projeto foi feito ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+./django.tex:255: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 tura especı́
+                    fica, que vai ser destrinchada a seguir:
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:258: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 ...tro do nosso projeto possuem caracterı́
+                                                  sticas
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:268: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 o inı́
+              cio. Outras bases de dados podem substituir a mesma posterior-
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:276: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 ...t para servidores web que sã ocompatı́
+                                                  veis
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:278: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 ...unciona como o WSGI, mas de forma assı́
+                                                  ncrona
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:286: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.286 ... configurações padrões, que são mı́
+                                                  nimas
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:290: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 O funcionamento do framework está intrı́
+                                                 secamento ligado ao seu arq...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:293: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 teremos logo de inı́
+                            cio, a nossa ligação com o banco de dados, que...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./django.tex:342: LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.342 ...), mas que é usada para ver as estatı́
+                                                  ticas de acesso e uso do s...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 348.
+
+./django.tex:348: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.348 mais fá
+              cil.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 349.
+
+./django.tex:349: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.349 3Criando nossas primeiras aplicaç
+                                        ões Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 349.
+
+./django.tex:349: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.349 3Criando nossas primeiras aplicaçõ
+                                          es Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 350.
+
+./django.tex:350: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.350 3.1Arquivo views.py e configuraç
+                                       ão de urls
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 350.
+
+./django.tex:350: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.350 3.1Arquivo views.py e configuraçã
+                                         o de urls
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 351.
+
+./django.tex:351: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.351 Quando criarmos o app da nossa aplicaç
+                                             ão, temos dentro dele um arquivo
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 351.
+
+./django.tex:351: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.351 Quando criarmos o app da nossa aplicaçã
+                                               o, temos dentro dele um arquivo
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 352.
+
+./django.tex:352: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.352 em particular que nã
+                           o está no projeto como um todo, que é o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 352.
+
+./django.tex:352: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.352 em particular que não está
+                                   no projeto como um todo, que é o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 352.
+
+./django.tex:352: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.352 ...ão está no projeto como um todo, que é
+                                                   o arquivo de
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 353.
+
+./django.tex:353: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.353 ...odemos colocar as views da nossa aplicaç
+                                                  ão, e per-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 353.
+
+./django.tex:353: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.353 ...emos colocar as views da nossa aplicaçã
+                                                  o, e per-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 354.
+
+./django.tex:354: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.354 ...nto mais clean e melhor da nossa aplicaç
+                                                  ão, além do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 354.
+
+./django.tex:354: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.354 ...o mais clean e melhor da nossa aplicaçã
+                                                  o, além do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 354.
+
+./django.tex:354: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.354 ...clean e melhor da nossa aplicação, alé
+                                                  m do
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 357.
+
+./django.tex:357: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.357 Temos també
+                  m que podemos aninhar as urls e portanto as views da nossa
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 358.
+
+./django.tex:358: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.358 aplicaç
+              ão. Para isso, devemos ir dentro do nosso app e es pecificar ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 358.
+
+./django.tex:358: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.358 aplicaçã
+                o. Para isso, devemos ir dentro do nosso app e es pecificar ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 359.
+
+./django.tex:359: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.359 e criar o arquivo de urls.py, alé
+                                        m de configurar as urls dentro do ar...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 365.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 365.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 365.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 365.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 366.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 366.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 366.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 366.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 366.
+
+./django.tex:366: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.366 ...’)),3 Criando nossas primeiras aplicaç
+                                                  ões Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 366.
+
+./django.tex:366: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.366 ...�)),3 Criando nossas primeiras aplicaçõ
+                                                  es Web
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 368.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 368.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 373.
+
+./django.tex:373: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.373 return HttpResponse("retornando da pá
+                                            gina inicial do blog")
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 378.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 378.
+
+./django.tex:378: Double superscript.
+<recently read> ^
+                 
+l.378 path(’’
+                 , views.blog),
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 383.
+
+./django.tex:383: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.383 A internet tem como padrã
+                                o para a criação e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 383.
+
+./django.tex:383: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.383 A internet tem como padrão para a criaç
+                                               ão e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 383.
+
+./django.tex:383: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.383 A internet tem como padrão para a criaçã
+                                                 o e visualização de sites...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 383.
+
+./django.tex:383: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.383 ...mo padrão para a criação e visualizaç
+                                                  ão de sites, o uso
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 383.
+
+./django.tex:383: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.383 ... padrão para a criação e visualizaçã
+                                                  o de sites, o uso
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 384.
+
+./django.tex:384: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.384 de trê
+             s tecnologias principais, o HTML, CSS e Javascript, sendo as duas
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 385.
+
+./django.tex:385: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.385 primeiras linguangens de marcaç
+                                      ão e a tereceira uma linguagem de pro-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 385.
+
+./django.tex:385: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.385 primeiras linguangens de marcaçã
+                                        o e a tereceira uma linguagem de pro-
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 386.
+
+./django.tex:386: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.386 gramaç
+             ão. Com isso, para servimos esses tipos de arquivos, precisamo...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 386.
+
+./django.tex:386: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.386 gramaçã
+               o. Com isso, para servimos esses tipos de arquivos, precisamo...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 387.
+
+./django.tex:387: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.387 pecificar a existê
+                         ncia, e a entrega deles para o request. Para fazerm...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 388.
+
+./django.tex:388: Please use \mathaccent for accents in math mode.
+<recently read> \accent 
+                        
+l.388 precisamos usar a funç
+                             ão de render do django, como mostrado a seguir:
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 388.
+
+./django.tex:388: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.388 precisamos usar a funçã
+                               o de render do django, como mostrado a seguir:
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 392.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 392.
+
+./django.tex:393: Missing $ inserted.
+<inserted text> 
+                $
+l.393 \end{document}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (789.81213pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 python \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 mvenvnome[]mbiente[]irtualAdependerdaplafatormadedesenvolvimentoescolhida; devemosativaroambientevirtualdeformadiferente; nessecaso; iremosinstruircombasenasplataformasMacOseLinux=Unix\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 Instala[][]oeinicializa[][]odoframework\OT1/cmr/m/n/10 2$
+ []
+
+
+Overfull \hbox (2192.39565pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 adminstartprojectnomeProjetoNapartefinaldocomandotemosporexemploaop[][]odeadicionaroprojetodentrodeumdiret[]rioespec\OT1/cmr/m/n/10 ^^P\OML/cmm/m/it/10 ficoqueser[]criadoparaoprojetooudentrododiret[]rioqueocomandoest[]sendoexecutado; paradefinirisso; devemosdeixarembranco; ouadicionarumponto; respectivamente:Ap[]sessasconfigura[][]es; instala[][]esecomandos; podemosusbiroDjangosemsequernecessitarcriaralgumainterface; poiselepossuiumatelainicial; quenoscomunicaseainstala[][]oecria[][]odonossoprojetofoifeitodemaneiracorreta:Paraisso; podemosusaroseguintecomando \OT1/cmr/m/n/10 :$python
+ []
+
+
+Overfull \hbox (119.72151pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 python\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 manage:pystartappnome[]o[]ppQuandocriarmosnossoapp; teremosnumanovapastaquecomelater \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1258.24336pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 emosassimumanovaformadecriarnossosite; eorganizareledamaneiramaisf[]cil:\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 Criandonossasprimeirasaplica[][]esWeb\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 Arquivoviews:pyeconfigura[][]odeurlsQuandocriarmosoappdanossaaplica[][]o; temosdentrodeleumarquivoemparticularquen[]oest[]noprojetocomoumtodo; que[]oarquivodeviews:py; dentrodelepodemoscolocarasviewsdanossaaplica[][]o; eper \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1344.69827pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 mitirumfuncionamentomaiscleanemelhordanossaaplica[][]o; al[]mdofatodequenoarquivodeurls; organizarmoseleapenascomospathsdasnossasurls:Temostamb[]mquepodemosaninharasurlseportantoasviewsdanossaaplica[][]o:Paraisso; devemosirdentrodonossoappeespecificarasviewsecriaroarquivodeurls:py; al[]mdeconfigurarasurlsdentrodoarquivodoprojetoemsim; comoaseguir \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (96.37918pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 projeto=urls:pyfromdjango:contribimportadminfromdjango:urlsimportpath; includeurlpatterns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (589.6108pt too wide) in paragraph at lines 200--393
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 =[]; include\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 home:urls[]\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 blog=[]; include\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 blog:urls[]\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 Criandonossasprimeirasaplica[][]esWeb\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 admin=[]; admin:site:urls\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 blog=views:pyfromdjango:httpimportHttpResponsedefblog\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (242.7035pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 returnHttpResponse\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 retornandodap[]ginainicialdoblog\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 blog=urls:pyfromdjango:urlsimportpathfrom:importviewsurlspatterns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (961.00003pt too wide) in paragraph at lines 200--393
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 path\OT1/cmr/m/n/10 ([][]\OML/cmm/m/it/10 ; views:blog\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ]3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 Renderizandotemplates; html; econfigurandooINSTALLEDAPPSAinternettemcomopadr[]oparaacria[][]oevisualiza[][]odesites; ousodetr[]stecnologiasprincipais; oHTML; CSSeJavascript; sendoasduasprimeiraslinguangensdemarca[][]oeatereceiraumalinguagemdepro \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (583.13235pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 grama[][]o:Comisso; paraservimosessestiposdearquivos; precisamoses \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 pecificaraexist[]ncia; eaentregadelesparaorequest:Parafazermosisso; precisamosusarafun[][]oderenderdodjango; comomostradoaseguir \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (39.62497pt too wide) in paragraph at lines 200--393
+\OML/cmm/m/it/10 fromdjango:shortcutsimportrenderdefhome\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request\OT1/cmr/m/n/10 ) : \OML/cmm/m/it/10 returnrender\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 request;[] nome \OMS/cmsy/m/n/10 ^^@
+ []
+
+[3] [4] [5] (./django.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 572 strings out of 478287
+ 9206 string characters out of 5849288
+ 329571 words of memory out of 5000000
+ 18844 multiletter control sequences out of 15000+600000
+ 471098 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,8n,38p,137b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on django.pdf (5 pages, 121373 bytes).
+PDF statistics:
+ 66 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
