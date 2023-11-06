@@ -1,296 +1,151 @@
-\documentclass{paper}
+\documentclass[12pt, a4paper]{paper}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+%\hfuzz=5.002pt 
+
+\title{Django \\
+  \hfill\includegraphics[height=3cm]{../images/universidade.png}
+  \vspace{-3cm}
+}
+\subtitle{Web framework python}
+\author{João Vitor Rezende Moura - 1221184773}
+\institution{UNIT - Universidade Tiradentes}
 
 \begin{document}
-\section{Oque é Django?}
-Abstract
-O desenvolvimento Web é uma necessidade de grande nos dias atuais, e será futu-
-ramente, com isso, visa-se a necessidade da criação e utilização de ferramentas que
-proporcionem uma melhor qualidade, velocidade e adaptabilidade dos projetos.
-Com isso, o web framework Django foi uma das soluções que utiliza da linguagem
-python para fazer o devesenvolvimento de aplicações Web.
-1
-Oque é Django?
-O Django é um web framework que segue a arquitetura MVT, e com ele
-podemos criar aplicações web com maior facilidade e rapidez, pelo fato de
-ele cuidar da maioria dos detalhes intrı́secos do desenvolvimento web. Como
-uma das suas caracterı́sticas, é que ele é de uso livre, e possui código open-
-source.
-Dentre algumas das ferramentas que o Django inclui, podemos listar al-
-gumas como:
-• Site maps
-• Authentication
-• Context Administrator
-• RSS Feeds
-Além disso, possui ferramentas que possibilitam uma maior segurança da
-aplicação, e muitas outras ferramentas voltadas para o desenvolvedor.
-2
-Instalação e inicialização do framework
-Dentro do python, é comum a utilização de ambientes virtuais, pois ele facilita
-e organiza o uso de bibliotecas que podem ser baixadas para o uso da nossa
-aplicação. Com isso, para inicializarmos nosso ambiente virtual e instalar o
-framework no ambiente virtual, podemos usar as seguintes instruções bash
-$ python -m venv nome_ambiente_virtual
-# A depender da plafatorma de desenvolvimento escolhida,
-# devemos ativar o ambiente virtual de forma diferente,
-# nesse caso, iremos instruir com base nas plataformas
-# MacOs e Linux/Unix2 Instalação e inicialização do framework
-2
-$ source ./nome_ambiente_virtual/bin/activate
-$ pip install django
-Posteriormente a isso, temos no nosso terminal, uma das ferramentas que
-instalamos junto com o Django, que é sua CLI, a qual permite iniciarmos o
-projeto e criar automaticamente sua estrutura e os arquivos necessários para
-cosntruirmos uma aplicação Django. Para criarmos a aplicação, devemos
-usar o documando:
-$django-admin startproject nomeProjeto
-Na parte final do comando temos por exemplo a opção de adicionar o
-projeto dentro de um diretório especı́fico que será criado para o projeto ou
-dentro do diretório que o comando está sendo executado, para definir isso,
-devemos deixar em branco, ou adicionar um ponto, respectivamente. Após
-essas configurações, instalações e comandos, podemos usbir o Django sem
-sequer necessitar criar alguma interface, pois ele possui uma tela inicial, que
-nos comunica se a instalação e criação do nosso projeto foi feito de maneira
-correta. Para isso, podemos usar o seguinte comando:
-$python manage.py runserver
-Com isso, estaremos rodando nossa aplicação, e ela pode ser acessada
-dentro do localhost, na porta 8000, que são definidos por padrão, mas caso
-necessário, podemos ser modificados nas configurações.
-Posteriormente a isso, temos que nosso projeto foi criado com uma esrtu-
-tura especı́fica, que vai ser destrinchada a seguir:
-2.1
-Estrutura dos arquivos do Django
-Os arquivos que foram criados dentro do nosso projeto possuem caracterı́sticas
-distintas dos outros devido á funcionalidade que lhe é atribuida, eles se car-
-acterizam por serem:
-• manage.py: Esse é o arquivo utilitário da CLI do django, que é usado
-como django-admin. Ele nos permite interagir com o projeto de várias
-maneiras.2 Instalação e inicialização do framework
-3
-• db.sqlite3: É nossa base de dados, por configuração o SQLite é a
-nossa base de dados por ser leve e ser integrado com o python por
-natureza, não necessitando de configurações para que funcione desde
-o inı́cio. Outras bases de dados podem substituir a mesma posterior-
-mente, mas para teste, ela é recomendada.
-•
-init .py:
-Arquivo de inicialização do pacote. Nosso projeto é
-desenvolvido como um pacote python, sendo assim, quando o mesmo é
-chamado, é necessário um arquivo de inicialização para que o mesmo
-seja executado na chamada do nosso pacote.
-• wsgi.py: Um entry-point para servidores web que sã ocompatı́veis
-com WSGI (Web Server Gateway Interface)
-• asgi.py: Funciona como o WSGI, mas de forma assı́ncrona
-• settings.py: Arquivo de configurações do nosso projeto, nos permite
-configurar até a forma como as variáveis de ambiente do projeto se
-comportam, até mesmo em qual pasta os arquivos estáticos se local-
-izam.
-• urls.py: As declarações de URL do nosso projeto Django funcionam
-como uma tabela, que permite especificarmos as URLs que podem ser
-acessadas no nosso site.
-Cada um desses arquivos possuem configurações padrões, que são mı́nimas
-para o funcionamento do Django.
-2.2
-Django.settings e funcionamento do framework
-O funcionamento do framework está intrı́secamento ligado ao seu arquivo de
-configurações, pois é ele que faz o ”meio de campo” entre todas as funcional-
-idades da ferramenta, por isso merece uma atenção em especial. Dentro dele
-teremos logo de inı́cio, a nossa ligação com o banco de dados, que é feito por
-meio da biblioteca pathlib, que define a pasta a qual se localiza nossa base
-de dados que foi criada junto com o projeto.
-Temos que o django funciona por meio da ideia de ”apps”, como se cada
-parte da nossa aplicação fosse um app dedicado, ou ela fosse um app como
-um todo, e isso pode ser definido por meio de subprojetos dentro do qual
-estamos atualmente — esse tópico será tocado com mais detalhes e calma
-posteriormente — temos também que o funcionamento do Django permite a
-presença de middlewares2 Instalação e inicialização do framework
-2.3
-4
-Criando as primeiras urls no Django
-Após criarmos nossa primeira aplicação, e vermos que sua instalação foi feita
-de maneira correta e completa, podemos assim criar nossas primeiras URLs,
-para que elas sejam acessadas dno navegador. Devemos nos direcionar ao
-arquivo de urls.py, dentro dela temos o seguinte:
-from django.contrib import admin
-from django.urls import path
-urlpatterns = [
-path(’admin/’, admin.site.urls),
-]
-Esse código permite que nós nos comuniquemos com os servidores por
-meio do protocolo HTTP(Hyper Text Transfer Protocol), que nos permite
-fazer requisições dos dados ao servidor, e ele nos responder com as informações
-desejada. Esse protocolo possui uma variação que é o HTTPS, que é sua
-versão que possui uma camada extra de segurança, que permite uma maior
-responsabilidade do lado do desenvolvedor e uma maior segurança do lado
-do cliente. Com isso, podemos assim, implementar uma URL customizada
-da seguinte forma:
-from django.contrib import admin
-from django.urls import path, HttpResponse
-def view(request):
-return HttpResponse(’Voltando código’)
-urlspatterns = [
-path(’blog/’, view)
-]
-Assim, quando criarmos essa função e essa url, vamos poder acessar essa
-url no nosso navegador, e ele vai prover o conteúdo disponibilizado pela
-função para que nós possamos usar ele para disponibilizar conteúdo para a
-requisição.3 Criando nossas primeiras aplicações Web
-2.4
-5
-Criando apps com o manage.py
-Os apps dentro do Django, são como uma subcategoria do projeto, que podem
-ser criadas várias dentro de um mesmo projeto, e isso é muito útil quando
-temos por exemplo, um projeto que deve ter duas formas de aplicação com-
-pletamente diferentes, como um e-commerce que deve ter a parte de compra
-e venda de produtos feita pelos usuários, e a parte administrativa das con-
-tas que não tem acesso as informações de compra e venda (necessariamente
-diretamente), mas que é usada para ver as estatı́ticas de acesso e uso do site.
-Tendo esse exemplo em mente, visa-se a necessidade e a utilidade do uso
-de apps dentro do Django, para criarmos o nosso, devemos usar o comando:
-$python3 manage.py startapp nome_do_app
-Quando criarmos nosso app, teremos numa nova pasta que com ela ter-
-emos assim uma nova forma de criar nosso site, e organizar ele da maneira
-mais fácil.
-3Criando nossas primeiras aplicações Web
-3.1Arquivo views.py e configuração de urls
-Quando criarmos o app da nossa aplicação, temos dentro dele um arquivo
-em particular que não está no projeto como um todo, que é o arquivo de
-views.py, dentro dele podemos colocar as views da nossa aplicação, e per-
-mitir um funcionamento mais clean e melhor da nossa aplicação, além do
-fato de que no arquivo de urls, organizarmos ele apenas com os paths das
-nossas urls.
-Temos também que podemos aninhar as urls e portanto as views da nossa
-aplicação. Para isso, devemos ir dentro do nosso app e es pecificar as views
-e criar o arquivo de urls.py, além de configurar as urls dentro do arquivo
-do projeto em sim, como a seguir:
-projeto/urls.py
-from django.contrib import admin
-from django.urls import path, include
-urlpatterns = [
-path(’/’, include(’home.urls’)),
-path(’blog/’, include(’blog.urls’)),3 Criando nossas primeiras aplicações Web
-6
-path(’admin/’, admin.site.urls),
-]
-blog/views.py
-from django.http import HttpResponse
-def blog(request):
-return HttpResponse("retornando da página inicial do blog")
-blog/urls.py
-from django.urls import path
-from . import views
-urlspatterns = [
-path(’’, views.blog),
-]
-3.2
-Renderizando templates, html, e configurando o
-INSTALLED APPS
-A internet tem como padrão para a criação e visualização de sites, o uso
-de três tecnologias principais, o HTML, CSS e Javascript, sendo as duas
-primeiras linguangens de marcação e a tereceira uma linguagem de pro-
-gramação. Com isso, para servimos esses tipos de arquivos, precisamos es-
-pecificar a existência, e a entrega deles para o request. Para fazermos isso,
-precisamos usar a função de render do django, como mostrado a seguir:
-from django.shortcuts import render
-def home(request):
-return render(request,
-’nome-do-arquivo.html’) % (fold)
-\label{sec:}
+\maketitle
+\hrule
+\begin{abstract}
+  O desenvolvimento Web é uma necessidade de grande nos dias atuais, e será futu-
+  ramente, com isso, visa-se a necessidade da criação e utilização de ferramentas que
+  proporcionem uma melhor qualidade, velocidade e adaptabilidade dos projetos.
+  Com isso, o web framework Django foi uma das soluções que utiliza da linguagem
+  python para fazer o devesenvolvimento de aplicações Web.
+\end{abstract}
 
-% section  (end)Oque é Django?
-1
-Abstract
-O desenvolvimento Web é uma necessidade de grande nos dias atuais, e será futu-
-ramente, com isso, visa-se a necessidade da criação e utilização de ferramentas que
-proporcionem uma melhor qualidade, velocidade e adaptabilidade dos projetos.
-Com isso, o web framework Django foi uma das soluções que utiliza da linguagem
-python para fazer o devesenvolvimento de aplicações Web.
-1
-Oque é Django?
+\vspace{-0.6cm}
+
+\begin{keywords}
+  Django, Web, Framework, Desenvolvimento, Python, MVT
+\end{keywords}
+
+\hrule
+
+\section{Oque é Django?} % (fold)
+\label{sec:Oque é Django?}
 O Django é um web framework que segue a arquitetura MVT, e com ele
 podemos criar aplicações web com maior facilidade e rapidez, pelo fato de
-ele cuidar da maioria dos detalhes intrı́secos do desenvolvimento web. Como
-uma das suas caracterı́sticas, é que ele é de uso livre, e possui código open-
+ele cuidar da maioria dos detalhes intrísecos do desenvolvimento web. Como
+uma das suas características, é que ele é de uso livre, e possui código open -
 source.
-Dentre algumas das ferramentas que o Django inclui, podemos listar al-
-gumas como:
-• Site maps
-• Authentication
-• Context Administrator
-• RSS Feeds
+Dentre algumas das ferramentas que o Django inclui, podemos listar algumas como:
+
+\begin{itemize}
+  \item Site maps
+  \item Authentication
+  \item Context Administrator
+  \item RSS Feeds
+\end{itemize}
+
 Além disso, possui ferramentas que possibilitam uma maior segurança da
 aplicação, e muitas outras ferramentas voltadas para o desenvolvedor.
-2
-Instalação e inicialização do framework
+
+
+\subsection{Instalação e inicialização do framework} % (fold)
+\label{sub:Instalação e inicialização do framework}
 Dentro do python, é comum a utilização de ambientes virtuais, pois ele facilita
 e organiza o uso de bibliotecas que podem ser baixadas para o uso da nossa
 aplicação. Com isso, para inicializarmos nosso ambiente virtual e instalar o
 framework no ambiente virtual, podemos usar as seguintes instruções bash
-$ python -m venv nome_ambiente_virtual
-# A depender da plafatorma de desenvolvimento escolhida,
-# devemos ativar o ambiente virtual de forma diferente,
-# nesse caso, iremos instruir com base nas plataformas
-# MacOs e Linux/Unix2 Instalação e inicialização do framework
-2
-$ source ./nome_ambiente_virtual/bin/activate
-$ pip install django
-Posteriormente a isso, temos no nosso terminal, uma das ferramentas que
-instalamos junto com o Django, que é sua CLI, a qual permite iniciarmos o
-projeto e criar automaticamente sua estrutura e os arquivos necessários para
+
+\begin{verbatim}
+  $ python -m venv nome_ambiente_virtual
+
+  # A depender da plafatorma de desenvolvimento escolhida,
+  # devemos ativar o ambiente virtual de forma diferente,
+  # nesse caso, iremos instruir com base nas plataformas
+  # MacOs e Linux/Unix2 Instalação e inicialização do framework
+
+  $ source ./nome_ambiente_virtual/bin/activate
+  $ pip install django
+\end{verbatim}
+
+%Posteriormente a isso, temos no nosso terminal, uma das ferramentas que
+%instalamos junto com o Django, que é sua CLI, a qual permite iniciarmos o
+%projeto e criar automaticamente sua estrutura e os arquivos necessários para
 cosntruirmos uma aplicação Django. Para criarmos a aplicação, devemos
 usar o documando:
-$django-admin startproject nomeProjeto
+
+\begin{verbatim}
+  $django-admin startproject nomeProjeto
+\end{verbatim}
+
 Na parte final do comando temos por exemplo a opção de adicionar o
-projeto dentro de um diretório especı́fico que será criado para o projeto ou
+projeto dentro de um diretório específico que será criado para o projeto ou
 dentro do diretório que o comando está sendo executado, para definir isso,
 devemos deixar em branco, ou adicionar um ponto, respectivamente. Após
 essas configurações, instalações e comandos, podemos usbir o Django sem
 sequer necessitar criar alguma interface, pois ele possui uma tela inicial, que
 nos comunica se a instalação e criação do nosso projeto foi feito de maneira
 correta. Para isso, podemos usar o seguinte comando:
-$python manage.py runserver
+
+\begin{verbatim}
+  $python manage.py runserver
+\end{verbatim}
+
 Com isso, estaremos rodando nossa aplicação, e ela pode ser acessada
 dentro do localhost, na porta 8000, que são definidos por padrão, mas caso
 necessário, podemos ser modificados nas configurações.
 Posteriormente a isso, temos que nosso projeto foi criado com uma esrtu-
-tura especı́fica, que vai ser destrinchada a seguir:
-2.1
-Estrutura dos arquivos do Django
-Os arquivos que foram criados dentro do nosso projeto possuem caracterı́sticas
+tura específica, que vai ser destrinchada a seguir:
+
+\subsection{Estrutura dos arquivos criados pelo Django} % (fold)
+\label{sub:Estrutura dos arquivos criados pelo Django}
+
+Os arquivos que foram criados dentro do nosso projeto possuem características
 distintas dos outros devido á funcionalidade que lhe é atribuida, eles se car-
 acterizam por serem:
-• manage.py: Esse é o arquivo utilitário da CLI do django, que é usado
+\begin{itemize}
+  \item \textbf{manage.py:} Esse é o arquivo utilitário da CLI do django, que é usado
 como django-admin. Ele nos permite interagir com o projeto de várias
 maneiras.2 Instalação e inicialização do framework
-3
-• db.sqlite3: É nossa base de dados, por configuração o SQLite é a
+
+  \item \textbf{db.sqlite3:} É nossa base de dados, por configuração o SQLite é a
 nossa base de dados por ser leve e ser integrado com o python por
 natureza, não necessitando de configurações para que funcione desde
-o inı́cio. Outras bases de dados podem substituir a mesma posterior-
+o início. Outras bases de dados podem substituir a mesma posterior-
 mente, mas para teste, ela é recomendada.
-•
-init .py:
-Arquivo de inicialização do pacote. Nosso projeto é
+
+  \item \textbf{\_\_init\_\_.py:} Arquivo de inicialização do pacote. Nosso projeto é
 desenvolvido como um pacote python, sendo assim, quando o mesmo é
 chamado, é necessário um arquivo de inicialização para que o mesmo
 seja executado na chamada do nosso pacote.
-• wsgi.py: Um entry-point para servidores web que sã ocompatı́veis
+
+  \item \textbf{wsgi.py:} Um entry-point para servidores web que são compatíveis
 com WSGI (Web Server Gateway Interface)
-• asgi.py: Funciona como o WSGI, mas de forma assı́ncrona
-• settings.py: Arquivo de configurações do nosso projeto, nos permite
+
+  \item \textbf{asgi.py:} Funciona como o WSGI, mas de forma assíncrona
+
+  \item \textbf{settings.py:} Arquivo de configurações do nosso projeto, nos permite
 configurar até a forma como as variáveis de ambiente do projeto se
 comportam, até mesmo em qual pasta os arquivos estáticos se local-
 izam.
-• urls.py: As declarações de URL do nosso projeto Django funcionam
+
+  \item \textbf{urls.py:} As declarações de URL do nosso projeto Django funcionam
 como uma tabela, que permite especificarmos as URLs que podem ser
 acessadas no nosso site.
-Cada um desses arquivos possuem configurações padrões, que são mı́nimas
+\end{itemize}
+
+Cada um desses arquivos possuem configurações padrões, que são mínimas
 para o funcionamento do Django.
-2.2
-Django.settings e funcionamento do framework
-O funcionamento do framework está intrı́secamento ligado ao seu arquivo de
+
+
+\subsection{Django.settings e funcionamento do framework} % (fold)
+\label{sub:Django.settings e funcionamento do framework}
+O funcionamento do framework está intrísecamento ligado ao seu arquivo de
 configurações, pois é ele que faz o ”meio de campo” entre todas as funcional-
 idades da ferramenta, por isso merece uma atenção em especial. Dentro dele
-teremos logo de inı́cio, a nossa ligação com o banco de dados, que é feito por
+teremos logo de início, a nossa ligação com o banco de dados, que é feito por
 meio da biblioteca pathlib, que define a pasta a qual se localiza nossa base
 de dados que foi criada junto com o projeto.
 Temos que o django funciona por meio da ideia de ”apps”, como se cada
@@ -298,56 +153,76 @@ parte da nossa aplicação fosse um app dedicado, ou ela fosse um app como
 um todo, e isso pode ser definido por meio de subprojetos dentro do qual
 estamos atualmente — esse tópico será tocado com mais detalhes e calma
 posteriormente — temos também que o funcionamento do Django permite a
-presença de middlewares2 Instalação e inicialização do framework
-2.3
-4
-Criando as primeiras urls no Django
+presença de middlewares 
+
+\subsection{Criando as primeiras urls no Django} % (fold)
+\label{sub:Criando as primeiras urls no Django}
 Após criarmos nossa primeira aplicação, e vermos que sua instalação foi feita
 de maneira correta e completa, podemos assim criar nossas primeiras URLs,
 para que elas sejam acessadas dno navegador. Devemos nos direcionar ao
-arquivo de urls.py, dentro dela temos o seguinte:
+arquivo de \texttt{urls.py}, dentro dela temos o seguinte:
+
+\begin{verbatim}
 from django.contrib import admin
 from django.urls import path
+  
 urlpatterns = [
-path(’admin/’, admin.site.urls),
+  path(’admin/’, admin.site.urls),
 ]
-Esse código permite que nós nos comuniquemos com os servidores por
-meio do protocolo HTTP(Hyper Text Transfer Protocol), que nos permite
-fazer requisições dos dados ao servidor, e ele nos responder com as informações
-desejada. Esse protocolo possui uma variação que é o HTTPS, que é sua
-versão que possui uma camada extra de segurança, que permite uma maior
-responsabilidade do lado do desenvolvedor e uma maior segurança do lado
-do cliente. Com isso, podemos assim, implementar uma URL customizada
-da seguinte forma:
+\end{verbatim}
+
+Esse código permite que nós nos comuniquemos com os servidores por meio do 
+protocolo HTTP ( Hyper Text Transfer Protocol), que nos permite fazer requisições
+dos dados ao servidor, e ele nos responder com as informações desejada.
+  
+Esse protocolo possui uma variação que é o HTTPS, que é sua versão que possui uma 
+camada extra de segurança, que permite uma maior responsabilidade do lado do 
+desenvolvedor e uma maior segurança do lado do cliente. 
+
+Com isso, podemos assim, implementar uma URL customizada da seguinte forma:
+
+\begin{verbatim}
 from django.contrib import admin
 from django.urls import path, HttpResponse
+
 def view(request):
-return HttpResponse(’Voltando código’)
+  return HttpResponse(’Voltando código’)
+
 urlspatterns = [
-path(’blog/’, view)
+  path(’blog/’, view)
 ]
+\end{verbatim}
+
 Assim, quando criarmos essa função e essa url, vamos poder acessar essa
 url no nosso navegador, e ele vai prover o conteúdo disponibilizado pela
 função para que nós possamos usar ele para disponibilizar conteúdo para a
-requisição.3 Criando nossas primeiras aplicações Web
-2.4
-5
-Criando apps com o manage.py
+requisição
+
+\newpage
+\section{Criando nossas primeira aplicações web}% (fold)
+\label{sec:Criando nossas primeira aplicações web}
+
+\subsection{Criando apps com o manage.py} % (fold)
+\label{sub:Criando apps com o manage.py}
 Os apps dentro do Django, são como uma subcategoria do projeto, que podem
 ser criadas várias dentro de um mesmo projeto, e isso é muito útil quando
 temos por exemplo, um projeto que deve ter duas formas de aplicação com-
 pletamente diferentes, como um e-commerce que deve ter a parte de compra
 e venda de produtos feita pelos usuários, e a parte administrativa das con-
 tas que não tem acesso as informações de compra e venda (necessariamente
-diretamente), mas que é usada para ver as estatı́ticas de acesso e uso do site.
+diretamente), mas que é usada para ver as estatísticas de acesso e uso do site.
 Tendo esse exemplo em mente, visa-se a necessidade e a utilidade do uso
 de apps dentro do Django, para criarmos o nosso, devemos usar o comando:
+
+\begin{verbatim}
 $python3 manage.py startapp nome_do_app
+\end{verbatim}
+
 Quando criarmos nosso app, teremos numa nova pasta que com ela ter-
 emos assim uma nova forma de criar nosso site, e organizar ele da maneira
 mais fácil.
-3Criando nossas primeiras aplicações Web
-3.1Arquivo views.py e configuração de urls
+
+Arquivo views.py e configuração de urls
 Quando criarmos o app da nossa aplicação, temos dentro dele um arquivo
 em particular que não está no projeto como um todo, que é o arquivo de
 views.py, dentro dele podemos colocar as views da nossa aplicação, e per-
@@ -355,39 +230,65 @@ mitir um funcionamento mais clean e melhor da nossa aplicação, além do
 fato de que no arquivo de urls, organizarmos ele apenas com os paths das
 nossas urls.
 Temos também que podemos aninhar as urls e portanto as views da nossa
-aplicação. Para isso, devemos ir dentro do nosso app e es pecificar as views
+aplicação. Para isso, devemos ir dentro do nosso app e especificar as views
 e criar o arquivo de urls.py, além de configurar as urls dentro do arquivo
 do projeto em sim, como a seguir:
-projeto/urls.py
+
+\paragraph{projeto/urls.py} % (fold)
+\label{par:projeto/urls.py}
+\begin{verbatim}
 from django.contrib import admin
 from django.urls import path, include
+
 urlpatterns = [
-path(’/’, include(’home.urls’)),
-path(’blog/’, include(’blog.urls’)),3 Criando nossas primeiras aplicações Web
-6
-path(’admin/’, admin.site.urls),
+  path(’/’, include(’home.urls’)),
+  path(’blog/’, include(’blog.urls’)),
+  path(’admin/’, admin.site.urls),
 ]
-blog/views.py
+\end{verbatim}
+
+\paragraph{blog/views.py} % (fold)
+\label{par:blog/views.py}
+
+\begin{verbatim}
 from django.http import HttpResponse
+
 def blog(request):
-return HttpResponse("retornando da página inicial do blog")
-blog/urls.py
+  return HttpResponse("retornando da página inicial do blog")
+\end{verbatim}
+
+\paragraph{blog/urls.py} % (fold)
+\label{par:blog/urls.py}
+\begin{verbatim}
 from django.urls import path
 from . import views
+
 urlspatterns = [
-path(’’, views.blog),
+  path(’’, views.blog),
 ]
-3.2
-Renderizando templates, html, e configurando o
-INSTALLED APPS
+\end{verbatim}
+
+
+\section{Renderizando templates, html e configurando o INSTALLED\_APPS} % (fold)
+\label{sec:Renderizando templates, html e configurando o INSTALLED\_APPS}
 A internet tem como padrão para a criação e visualização de sites, o uso
 de três tecnologias principais, o HTML, CSS e Javascript, sendo as duas
 primeiras linguangens de marcação e a tereceira uma linguagem de pro-
 gramação. Com isso, para servimos esses tipos de arquivos, precisamos es-
 pecificar a existência, e a entrega deles para o request. Para fazermos isso,
 precisamos usar a função de render do django, como mostrado a seguir:
+
+\begin{verbatim}
 from django.shortcuts import render
+
 def home(request):
-return render(request,
-’nome-do-arquivo.html’)
+  return render(
+            request,
+          ’nome-do-arquivo.html’)
+\end{verbatim}
+
+Tendo em vista esses elementos, devemos posteriormente dentro do arquivo de 
+configurações, adicionar nosso app na lista de apps instalados, para que quando
+o django execute, ele possa achar nosso app, e nos permitir acessar o mesmo
+pelo navegador
 \end{document}

@@ -1,0 +1,164 @@
+% File configurations
+\documentclass[12pt, a4paper]{paper}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{listings}
+\usepackage{multicol}
+\title{Javascript \\
+  \hfill\includegraphics[height=3cm]{../images/universidade.png}
+  \vspace{-3cm}
+}
+\subtitle{Do básico ao avançado seguindo a MDN web docs}
+\author{João Vitor Rezende Moura - 1221184773}
+\institution{UNIT - Universidade Tiradentes}
+
+% Specific elements created
+
+
+\begin{document}
+% Document specific elements
+\maketitle
+
+\hrule
+\begin{abstract}
+  abstract
+\end{abstract}
+\vspace{-0.6cm} % vspace 
+\begin{keywords}
+  Javascript, Front-End, UI, media-queries, web
+\end{keywords}
+\hrule
+
+% ------------------ Content -------------------------------
+\section{Primeiros passos com javascript} % (fold)
+\label{sec:Primeiros passos com javascript}
+
+% section Primeiros passos com javascript (end)
+
+\section{Criando elementos em javascript} % (fold)
+\label{sec:Criando elementos em javascript}
+
+\subsection{Condicionais dentro do javascript} % (fold)
+\label{sub:Condicionais dentro do javascript}
+Dentro de qualquer linguagem de programação, temos que tomar decisões, 
+sejam elas baseadas nas informações providas pelo usuário, nas informações 
+que conseguimos captar dele, ou seja por algum outro motivo. Esse tipo de 
+escolha, pode ser feito por meio de uma estrutura que existem em todas as 
+linguagens de programação, e que recebe o nome de \textbf{\textit{condicionais}}.\par
+
+Elas permitem que a partir de determinada condição que deve ser analisada,
+executar-
+mos uma determinada ação, ou outra. Um exemplo de código javascript 
+que possui essa determinada estrutura, é a seguinte:
+
+\begin{verbatim}
+  if(condição){
+    // codigo executado se a condição for verdadeira
+  }else{
+    // código executado se a condição for falsa
+  }
+\end{verbatim}
+
+A priori, temos que as palavras \texttt{if} e \texttt{else} são reservadas dentro do 
+javascript para a construção de estruturas condicionais, portanto
+temos que dentro dos parênteses, temos a condição que deve ser analisada, 
+e dentro das chaves, os blocos de códigos a serem executados condicionalmente.
+
+A posteriori, temos que as vezes as comparações condicionais de dois fatores
+podem não ser suficientes para nós conseguirmos analisar o código e executá-lo 
+da maneira desejada, portanto, temos a necessidade de comparar um determinado valor 
+a várias possibilidades as quais ele pode assumir, e assim surge o \texttt{else if}:
+
+\begin{verbatim}
+  if(primeiraCondicao){
+    // executar código do primeiro bloco
+  }else if(segundaCondicao){
+    // executar o segundo bloco de código
+  }else{
+    // executar bloco de código quando condições não forem atingidas
+  }
+\end{verbatim}
+
+\subsection{Aninhando condicionais, e estabelecendo condições} % (fold)
+\label{sub:Aninhando condicionais, e estabelecendo condições}
+Temos que as condições presentes analisandas dentro das condicionais,
+devem assumir valores booleanos, ou seja, de verdadeiro ou falso. Entretanto,
+podemos criar análises numéricas, decimais, e de outros tipos primitivos, que 
+possuem como resultado, um valor booleano, e inserir como a condição que controla
+o fluxo da condicional, como no seguinte caso:
+
+\begin{verbatim}
+  let condicao = 15 < 20
+
+  if(condicao){
+    // executar código se a condicao for verdadeira
+  }else{
+    // executar código se a condicao for falsa
+
+\end{verbatim}
+
+Temos no exemplo anterior, que uma comparação lógica entre dois elementos numéricos
+gerou um valor booleano, e isso pode ser feito de várias maneiras por meio dos operadores lógicos, ou por meio de operadores de comparação. Os operadores que possibilitam isso, são os de comparação matemática, e operadores booleanos, que são o \texttt{\&\&} e o \texttt{||}, que são de disjunção e conjunção respectivamente
+
+Podemos também aninhar condicionais, ou seja, dentro de alguma determinada condi-
+cional, fazer outra condicional que pode comparar o mesmo valor, ou um valor que não possua
+conexão com o primeiro comparado.
+% subsection Aninhando condicionais, e estabelecendo condições (end)
+
+\subsection{Instrução switch} % (fold)
+\label{sub:Instrução switch}
+As isntruções condicionais são muito úteis, entretanto, quando temos uma variável
+que pode assumir diversos valores, isso cria uma cadenia de condicionais que é dificil
+de manter no código, e difícil de entender, portanto, é recomendando que quando 
+comparamos condicçoes que podem assumir diversos valores, que usemos 
+a estrutura \texttt{switch}.
+
+\begin{verbatim}
+  switch(expression){
+    case choice1:
+      // run code and break the comparation
+      break;
+    case choice2:
+      // run code and break the comparation
+      break;
+    default:
+      // only need to run the code actually
+  } 
+\end{verbatim}
+
+Nesse caso, temos que dois casos existem, e que quebramos a comparação como última 
+instrução do caso o qual o mesmo corresponde. Isso se deve ao fato de que o switch case 
+pode desejar que uma expressão, encaixe em mais de um caso, sendo assim, o mesmo deve 
+passar pelos dois casos, e executar os dois blocos de isntrução, e isso é feito não 
+quebrando a comparação dos casos, ou seja, não adicionando a instrução \texttt{break}.
+Caso nenhum dos casos seja verdadeiro, ou caso o que seja, não possua a instrução de 
+quebrar a comparação, e seja o único verdadeiro, a expressão vai cair no caso padrão, 
+e após executar as instruções, vai quebrar a comparação por ser o último caso 
+propositadamente.
+% subsection Instrução switch (end)
+
+\subsection{Operador ternário} % (fold)
+\label{sub:Operador ternário}
+Temos que as comparações são elementos essenciais dentro da programação, entretanto 
+elas ocupam muito espaço visual, e algumas comparações são tão pequenas que são quase
+"banais", pra isso existe o operador ternário, que permite uma comparação de um 
+elemento, que pode receber um de dois valores se sua condição for verdadeira, e essa 
+instrução é feita toda em um única linha.
+
+\begin{verbatim}
+  (condição) ? se a condição for verdadeira : se a condição for falsa;
+\end{verbatim}
+% subsection Operador ternário (end)
+
+\section{Loops} % (fold)
+\label{sec:Loops}
+
+% section Loops (end)
+
+% section Cosntruindo elementos com o javascript (end)
+\end{document}
+
+
+
+
