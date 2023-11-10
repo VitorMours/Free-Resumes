@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1699219382 "django.tex" "django.pdf" "django" 1699219382
+["pdflatex"] 1699625545 "django.tex" "django.pdf" "django" 1699625545
   "../images/universidade.png" 1698758604 54064 7182a0180e95cc11dd5adb1da121c326 ""
   "/etc/texmf/web2c/texmf.cnf" 1698456357 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -52,8 +52,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1698590515 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1698590620 2798568 a3175bd43476146437ba3f929f7c8434 ""
-  "django.aux" 1699219373 2040 d25571ffd0aca6d2ebbb79ee44623b57 "pdflatex"
-  "django.tex" 1699219381 11565 f7a55f5c877fef72a7d17738f8dc13f4 ""
+  "django.aux" 1699625534 2038 00c0430265063cfc458e3687d606eeca "pdflatex"
+  "django.tex" 1699625544 12523 9ebe2b3b7818bb19b54ebd7c8b0ce487 ""
   (generated)
   "django.aux"
   "django.log"

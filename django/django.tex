@@ -22,9 +22,7 @@
   Com isso, o web framework Django foi uma das soluções que utiliza da linguagem
   python para fazer o devesenvolvimento de aplicações Web.
 \end{abstract}
-
-\vspace{-0.6cm}
-
+%\vspace{-0.6cm}
 \begin{keywords}
   Django, Web, Framework, Desenvolvimento, Python, MVT
 \end{keywords}
@@ -291,4 +289,37 @@ Tendo em vista esses elementos, devemos posteriormente dentro do arquivo de
 configurações, adicionar nosso app na lista de apps instalados, para que quando
 o django execute, ele possa achar nosso app, e nos permitir acessar o mesmo
 pelo navegador
+
+\begin{verbatim}
+INSTALLED\_APPS = [
+  'djang.contrib.admin',
+  ...,
+  'django.contrib.staticfiles',
+  'home'
+]
+\end{verbatim}
+
+Temos então nosso app localizado dentro da nossa aplicação. Com tudo, um erro 
+comum dentro do django quando possuímos dois templates com o mesmo nome, apesar 
+deles se localizarem em locais diferentes, é que um deles seja escolhido  para 
+ser servido aleatoriamente. Com o intuito de evitar isso, é recomendado que dentro 
+da nossa pasta do app, e dentro da pasta de templates do app, adicionemos uma outra 
+pasta com o nome do nosso app, e coloquemos lá dentro nosso templates, criando assim 
+um \textbf{namespace}, elemento que evita que esses erros ocorram.
+
+\subsection{Configuração de templates globais e Herança de Templates} % (fold)
+\label{sub:Configuração de templates globais e Herança de Templates}
+
+% subsection Configuração de templates globais e Herança de Templates (end)
+
+
+:
+
+
+
+
+
+
+
+
 \end{document}
