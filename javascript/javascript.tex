@@ -153,10 +153,312 @@ instrução é feita toda em um única linha.
 
 \section{Loops} % (fold)
 \label{sec:Loops}
+Os loops. são estruturas que permitem repetição de determinadas partes do código, 
+até que uma determinada condição que pode ser pré-definida, ou mudar conforme a 
+execução do código, seja realizada. Eles possuem uma estrutura padrão, mas podem se 
+modificar conforme as necessidades e peculiaridades de cada código. Por padrão 
+os laços dentro do Javascript são feitos da seguinte forma: 
 
+\begin{verbatim}
+for(inicializador; condição de saída; expressão final){
+  //código
+}
+
+\end{verbatim}
+
+\subsection{Saindo dos laços por meio da instrução break}
+\label{sub:Saindo dos laços por meio da instrução break} % (fold)
+Apesar dos laços possuirem uma quantidade definida de vezes as quais eles repetem um 
+conjunto específico de ações, eles podem sofrer alterações no seu comportamente e 
+podem também sofrerem desvios por meio de condicionais que podem ser colocadas dentro 
+dos laços, com intuito de caso uma certa condição seja apresentada, aquela interação 
+e as seguintes sejam canceladas.
+
+\begin{verbatim}
+for(inicializador; condição de saida; expressao final){
+
+  // codigo
+  if(condicao){
+    break;
+  }
+}
+
+\end{verbatim}
+
+
+\textbf{Obs:} O mesmo pode ser feito com a instrução \textbf{continue;}, so que 
+diferentemente, ele não vai cacelar todas as interações, ele só vai cancelar a atual, 
+e prosseguir com as seguintes.
+
+
+\subsection{While e do...while}
+\label{While e do...while}
+Essas instruções são parecidas com os laços, entretanto, a diferença é que elas 
+apresentam em si, o fato de que ela não necessariamente possuem dentro de si uma 
+condição de saída, mas sim uma condição de continuidade, em que caso ela seja 
+satisfeita, aquele laço será repetido até que essa mesma condição seja quebrada. 
+
+Temos que essa instrução pode ser apresentada e executada de duas maneiras, na primeira,
+ele confere a condicional, e se for verdadeira, ele executa um bloco de código e parte 
+para a próxima verificação. Por outro lado, podemos fazer com que ele primeiro execute 
+a ação, e somente posteriormente verifique as condicionais, como mostrados os exemplos
+seguintes: 
+
+\begin{verbatim}
+while(condicao){
+
+  // executar código
+
+}
+
+do{
+  \\ executar código
+
+}while(condição)
+\end{verbatim}
 % section Loops (end)
 
-% section Cosntruindo elementos com o javascript (end)
+
+\section{Funções - Blocos reutilizáveis de código} % (fold)
+\label{sec:Funções - Blocos reutilizáveis de código}
+Funções são rotinas de código pré-definidas que podem ser utilizadas diversas vezes, e 
+que são agrupadas dentro de uma mesma chamada, ou seja, invocando somente um comando 
+dentro do código, todas aquelas ações correspondentes presentes dentro da nossa 
+função, será executadas.
+
+Elas podem vir de natureza da própria linguagem, serem chamadas a partir de objetos, ou 
+serem criadas pelo desenvolvedor para executar uma rotina específica de funções que 
+existem, elas podem aparecer das seguintes formas: 
+
+\begin{verbatim}
+  // embutida do navegador    
+  console.log();
+  // por meio de objetos 
+  MyArray.join("");
+  // funções criadas pelo desenvolvedor 
+  function draw(){
+    console.log("desenhando");
+  }
+  draw();
+\end{verbatim}
+
+\subsection{Funções vs. Métodos} % (fold)
+\label{sub:Funções vs. Métodos}
+Uma coisa técnicas mas que pode ser pontuada, é o fato de que as funções embutidas 
+nos navegadores na verdade são chamadas de métodos, pois o navegador é um objeto, e 
+toda função que referencia um objeto é chamada de método, e as funções não 
+necessariamente referenciam objetos. 
+% subsection Funções vs. Métodos (end)
+
+As funções dentro do javascript, podem possuir uma característica muito especial, que 
+é serem anônimas, ou seja, não possuírem um nome definido que as permitam serem 
+invocadas. Normalmente fazemos isso quando criamos uma função junto com um 
+manipulador de eventos.
+
+\subsection{Parâmetros de funções} % (fold)
+\label{sub:Parâmetros de funções}
+Algumas funções requerem parâmetros a serem especificados quando estamos invocando eles,
+ esses valores precisam ser inclusos dentro dos parênteses da função, o que é  
+ necessário para fazer seu trabalho apropriado. 
+% subsection Parâmetros de funções (end)
+
+\subsection{Função escopo e conflitos} % (fold)
+\label{sub:Função escopo e conflitos}
+Um conceito muito importante quando lidamos com funções é o escopo do seu uso. As 
+funções, e suas variáveis possui um escopo, ou seja eles funcionam apenas dentro do 
+seu próprio funcionamento, sendo inacessível para outras funções ou de código do lado 
+de fora das funções. 
+
+Essa "passagem" de valores só pode ser feito por meio da passagem dos valores do 
+escopo local, por meio ad chamada da outra função, e a enviando-a como parâmetro.
+ % subsection Função escopo e conflitos (end)
+
+\subsection{Retornando valores} % (fold)
+\label{sub:Retornando valores}
+As funções elas podem ser entendidas, como rotinas de ações que executam e modificam
+dados, portanto, pode-se desejar obter de volta os dados modificados, ou obter os 
+dados que foram criados. Para isso, podemos usar a palavra reservada \textbf{return} 
+para indicar um dado que deve ser retornado da chamada da função.
+% subsection Retornando valores (end)
+% section Funções - Blocos reutilizáveis de código (end)
+
+\section{Introdução a eventos.} % (fold)
+\label{sec:Introdução a eventos.}
+Eventos são ações ou ocorrências que acontecem no sistema que estamos desenvolvendo, no 
+qual este te alerta sobre ações para que as quais devemos poder responder de alguma 
+determinada forma. Eventos web são disparados dentro da janela do navegador e tendem a 
+estarem anexados a lagum item específico nele. 
+
+Os \textbf{Manipuladores de eventos} são blocos de código que são executados pelo 
+evento quando ele é disparado, esse elemento também pode ser chamado de 
+\textit{event handler}. Um exemplo de seu uso pode ser visto a seguir:
+
+\begin{verbatim}
+HTML 
+<button>Change color</button>
+
+
+JS
+var button = document.querySelector("button")
+
+function random(number){
+  return Math.floor(Math.random() * (number + 1));
+}
+
+button.onClick = function(){
+  var randomColor = "rgb(" + random(255) + 
+                       "," + random(255) + "," + random(255) + ")"
+  document.body.style.backgroundColor = randomColor;
+
+
+\end{verbatim}
+
+
+\subsection{Não são apenas páginas web} % (fold)
+\label{sub:Não são apenas páginas web}
+O modelo de eventos no JavaScript para web pages difere dos outros modelos de eventos 
+próprios que as outras linguagens de programação podem conter. O \textbf{Node.js} é 
+um interpretador de código JavaScript que permite o desenvolvimento de aplicações do 
+lado do servidor. O event model do Node.js depende dos ouvintes para escutar eventos e 
+emissores para emitir eventos periodicamente.
+
+\subsection{Maneiras de usar os eventos Web} % (fold)
+\label{sub:Maneiras de usar os eventos Web}
+Hpa várias maneiras de adicionar código com event listeners a uma determinada página 
+web, mas a forma mais comum disso ser feita é por meio de propriedades nas páginas as 
+quais são adicionadas os manipuladores de eventos. As \textbf{propriedades} podem ser 
+usadas para conter código que manipulam os eventos. Essas propriedades são 
+essencialmente iguais a qualquer outra disponível, mas com um tipo especial o qual 
+pertencem.
+% subsection Maneiras de usar os eventos Web (end)
+
+\subsection{addEventListener e removeEventListener} % (fold)
+\label{sub:addEventListener e removeEventListener}
+Temos que os mecanismos de eventos são definidos nas especificações de eventos que 
+ficam presentes dentro da DOM(Document Object Model), o qual fornece aos navegadores 
+uma nova função, que é a de adição de eventlisteners. Dentro dessas funções, 
+especificamos o nome do evento para o qual queremos registrar esse manipulador, e o 
+código que compreende a função do manipulador que queremos executar em resposta a ele. 
+
+\begin{verbatim}
+let button = document.querySelector("button");
+
+button.addEventListener("click", => (){
+  document.body.style.backgroundColor = randomcolor...;
+});
+
+
+// Se quisermos remover o event listener, podemos usar o seguitne código 
+
+button.removeEventListener("click", colorChange)
+\end{verbatim}
+
+Uma observação que deve ser feita sore o event listener e sua remoção, é que para a 
+mesma seja feita, precisamos especificar o nome da função responsável pelo event 
+listener.
+% subsection addEventListener e removeEventListener (end)
+
+\subsection{Objetos de Eventos} % (fold)
+\label{sub:Objetos de Eventos}
+Dentro de uma função a qual manipulaos o evento podemos desejar verificar um parâmetro 
+chamado \texttt{event}. É um objeto representante do evento em si, e é passado 
+automaticamente para os manipuladores de eventos para fornecer recursos e informações 
+extras.
+Esse evento possui o atributo target, que é sempre uma referência ao elemento em que o 
+evento acabou de ocorrer. Ele é útil quando desejamos definir o mesmo manipulador de 
+eventos em vários elementos e fazer algo com todos eles quando ocorre um evento neles. 
+Isso pode ser feito com o método \texttt{querySelectorAll()}.
+
+Outra coia importante é que podemos implementar uma verificação simples dentro do 
+manipulador de eventos, como dentro do \texttt{onsubmit}, por exemplo, que verifica 
+se a função no objeto do evento tem campos vazios.
+
+\begin{verbatim}
+var form = document.querySelector("form");
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
+var submit = document.getElementById("submit");
+var para = document.querySelector("p");
+
+form.onsubmit = function (e) {
+  if (fname.value === "" || lname.value === "") {
+    e.preventDefault();
+    para.textContent = "You need to fill in both names!";
+  }
+};
+\end{verbatim}
+% subsection Objetos de Eventos (end)
+
+\subsection{Borbulhamento e Captura de eventos} % (fold)
+\label{sub:Borbulhamento e Captura de eventos}
+Borbulhamento e captura de eventos são dois mecanismos que descrevem oque acontece 
+quando dos manipuladores do mesmo tipo de evento são ativados em um elemento. Quando 
+temos dois manipuladores de eventos, quando um evento é acionado em um elemento que 
+possui elementos pai, os navegadores executam duas fases diferentes, que são as fases 
+de captura de bubbling. 
+
+\subsubsection{Fase de Captura} % (fold)
+\label{sec:Fase de Captura}
+Na fase de captura, o nabegador verifica se o ancestral mais externo do elemento tem 
+um manipulador de eventos registrado nele na fase de captura e executa em caso 
+afirmativo, o manipulador verificado é o \texttt{onclick}. Em seguida ele passa para 
+o próximo elemento dentro do html e faz a mesma coisa, e assim por diante até alcançar o elemento que foi realmente clicado.
+% subsubsection Fase de Captura (end)
+
+\subsubsection{Fase de bubbling} % (fold)
+\label{sec:Fase de bubbling}
+O navegador verifica se o elemento que foi clicado realmente tem o manipulador de 
+eventos específico registrado nele e o executa em caso afirmativo. Em seguida ele passa 
+para o próximo elemento até alcançar o elemento html
+% subsubsection Fase de bubbling (end)
+
+Esse tipo de problema pode ser corrigido com o objeto padrão chamado o método 
+\texttt{stopPropagation()}, que quando invocado no objeto de evento de um manipulador 
+faz com que o manipulador seja executado, mas o evento não borbulha mais acima da 
+cadeia.
+% subsection Borbulhamento e Captura de eventos (end)
+% section Introdução a eventos. (end)
+
+\section{Intodução a Objetos em JavaScript} % (fold)
+\label{sec:Intodução a Objetos em JavaScript}
+\subsection{Noções básicas de Objetos} % (fold)
+\label{sub:Noções básicas de Objetos}
+Um objeto é uma coleção de dados e/ou funcionalidades relacionadas. Eles podem ser 
+armazenados dentro de variáveis, como valores descritos, para criar um objeto vazio, 
+podemos fazer da seguinte maneira: 
+
+\begin{verbatim}
+  var pessoa = {};
+
+  // Console
+  [object Object]
+\end{verbatim}
+
+Entretanto, podemos criar objetos pré-definidos para o uso, possuindo atributos e 
+métodos já instanciados dentro da sua criação, como mostrado a seguir: 
+
+\begin{verbatim}
+  var pessoa = {
+    nome: ["",""],
+    ...
+
+
+
+
+  }
+\end{verbatim}
+
+
+
+
+
+
+
+% subsection Noções básicas de Objetos (end)
+% section Intodução a Objetos em JavaScript (end)
+
+
+
 \end{document}
 
 
