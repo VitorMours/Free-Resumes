@@ -5,7 +5,7 @@
 %\hfuzz=5.002pt 
 
 \title{Django \\
-  \hfill\includegraphics[height=3cm]{../images/universidade.png}
+  %\hfill\includegraphics[height=3cm]{../images/universidade.png}
   \vspace{-3cm}
 }
 \subtitle{Web framework python}
@@ -22,13 +22,13 @@
   Com isso, o web framework Django foi uma das soluções que utiliza da linguagem
   python para fazer o devesenvolvimento de aplicações Web.
 \end{abstract}
-%\vspace{-0.6cm}
+\vspace{-0.6cm}
+
+
 \begin{keywords}
   Django, Web, Framework, Desenvolvimento, Python, MVT
 \end{keywords}
-
 \hrule
-
 \section{Oque é Django?} % (fold)
 \label{sec:Oque é Django?}
 O Django é um web framework que segue a arquitetura MVT, e com ele
@@ -172,7 +172,7 @@ urlpatterns = [
 Esse código permite que nós nos comuniquemos com os servidores por meio do 
 protocolo HTTP ( Hyper Text Transfer Protocol), que nos permite fazer requisições
 dos dados ao servidor, e ele nos responder com as informações desejada.
-  
+ 
 Esse protocolo possui uma variação que é o HTTPS, que é sua versão que possui uma 
 camada extra de segurança, que permite uma maior responsabilidade do lado do 
 desenvolvedor e uma maior segurança do lado do cliente. 
@@ -181,7 +181,8 @@ Com isso, podemos assim, implementar uma URL customizada da seguinte forma:
 
 \begin{verbatim}
 from django.contrib import admin
-from django.urls import path, HttpResponse
+from django.urls import path 
+from django.http import HttpResponse
 
 def view(request):
   return HttpResponse(’Voltando código’)
@@ -239,7 +240,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-  path(’/’, include(’home.urls’)),
   path(’blog/’, include(’blog.urls’)),
   path(’admin/’, admin.site.urls),
 ]
@@ -271,18 +271,21 @@ urlspatterns = [
 \label{sec:Renderizando templates, html e configurando o INSTALLED\_APPS}
 A internet tem como padrão para a criação e visualização de sites, o uso
 de três tecnologias principais, o HTML, CSS e Javascript, sendo as duas
-primeiras linguangens de marcação e a tereceira uma linguagem de pro-
+primeiras linguangens de marcação e a tereceira uma linguagem de pro
 gramação. Com isso, para servimos esses tipos de arquivos, precisamos es-
 pecificar a existência, e a entrega deles para o request. Para fazermos isso,
 precisamos usar a função de render do django, como mostrado a seguir:
 
+
+\paragraph{blog/views.py} % (fold)
+\label{par:blog/views.py}
 \begin{verbatim}
 from django.shortcuts import render
 
 def home(request):
   return render(
             request,
-          ’nome-do-arquivo.html’)
+          ’pastanamespace/arquivo.html’)
 \end{verbatim}
 
 Tendo em vista esses elementos, devemos posteriormente dentro do arquivo de 
@@ -290,6 +293,9 @@ configurações, adicionar nosso app na lista de apps instalados, para que quand
 o django execute, ele possa achar nosso app, e nos permitir acessar o mesmo
 pelo navegador
 
+
+\paragraph{settings.py} % (fold)
+\label{par:settings.py}
 \begin{verbatim}
 INSTALLED\_APPS = [
   'djang.contrib.admin',
@@ -307,17 +313,104 @@ da nossa pasta do app, e dentro da pasta de templates do app, adicionemos uma ou
 pasta com o nome do nosso app, e coloquemos lá dentro nosso templates, criando assim 
 um \textbf{namespace}, elemento que evita que esses erros ocorram.
 
+Com isso, no final teremos dentro de cada app nosso, uma pasta que deve conter os 
+templates referentes àquela aplicação, e dento dessa pasta de templates, teremos a 
+pasta de namespace com nossos arquivos de html.
+
 \subsection{Configuração de templates globais e Herança de Templates} % (fold)
 \label{sub:Configuração de templates globais e Herança de Templates}
+Quando estamos criando um projeto, podemos criar pastas para separarmos os templates 
+os quais utilizamos, e podemos criar pastas dentro dessa pasta de template, para 
+organizar esses templates confome a sua funcionalidade. 
 
+Assim, quando formos usar determinados arquivos para a construção da nossa aplicação 
+web, podemos fazer com que esses arquivos sejam reutilizados em outras partes do nosso site, pois podemos extender esses arquivos, como será mostrado a seguir: 
+
+
+\paragraph{index.html} % (fold)
+\label{par:index.html}
+% paragraph index.html (end)
+\begin{verbatim}
+  
+  <!DOCTYPE HTML>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+  <body>
+    <h1>Escrevendo um título na página</h1>
+  </body>
+  </html>
+\end{verbatim}
+
+\paragraph{page.html} % (fold)
+\label{par:page.html}
+
+% paragraph page.html (end)
+
+\begin{verbatim}
+  {%extends "pastanamespace/index.html"%}
+
+\end{verbatim}
+
+É bom que nós quando formos criar as pastas e formos criar nossos templates, dentro da 
+pasta de template criarmos novamente outra pasta, mas que deve er em si especificamente 
+o nome do aplicativo o qual ela faz parte, pois isso previne que nós criemos problemas 
+de conflito de busca dos templates pois eles funcionam como namespaces.
 % subsection Configuração de templates globais e Herança de Templates (end)
 
+\subsection{Arquivos parciais e o comando include} % (fold)
+\label{sub:Arquivos parciais e o comando include}
+Dentro da forma como trabalhamos com os templates dentro do Django, podemos ter que 
+esses templates podem ser separados em diversos arquivos, e que conforme as 
+necessidades da aplicação ele são montados com determinados elementos. Para podermos
+usar esses elementos, podemos criar uma pasta dentro da pasta global, com todos os 
+arquivos parciais do nosso projeto, por exemplo, e a partir disso criar um sistema de 
+"baterias" dentro do nosso projeto. 
 
-:
+Esse tipo de funcionaldiade é permitida por causa do comando \texttt{include} do django,
+o qual permite que nós incluamos determinadas partes de de código quando necessário 
 
 
+\begin{verbatim}
+{% include 'global/partials/head.html'%}
 
+<h1>
+O head do texto la na inclusão, ou seja. não há necessidade de digitá-lo
+</h1>
+</body>
+</html>
+\end{verbatim}
+% subsection Arquivos parciais e o comando include (end)
 
+\subsection{Trabalhando com arquivos estáticos} % (fold)
+\label{sub:Trabalhando com arquivos estáticos}
+Quando estamos trabalhando com arquivos estáticos, como fotos por exemplo, precisamos 
+especificar a sua existência e seu tipo de funcionamento para o django, e podemos fazer 
+isso definido dentro da pasta a qual falamos que seria a base das templates, uma nova 
+pasta que será onde iremos armazenar nossos arquivos estáticos.
+
+Para acessar os arquivos estáticos dentro da nossa página HTML, precisamos 
+primeira- 
+mente carregar os arquivos por meio do comando \texttt{load}, e ao carregar nossa pasta, 
+podemos usar os arquivos por meio do comando:
+
+\begin{verbatim}
+  {% load static %}<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'nomedapasta/arquivo'}">
+  </head>
+\end{verbatim}
+% subsection Trabalhando com arquivos estáticos (end)
+
+\subsection{usando o context para enviar dados para dentro dos templates} % (fold)
+\label{sub:usando o context para enviar dados para dentro dos templates}
+
+% subsection usando o context para enviar dados para dentro dos templates (end)
 
 
 

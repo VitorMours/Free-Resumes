@@ -440,21 +440,60 @@ métodos já instanciados dentro da sua criação, como mostrado a seguir:
 \begin{verbatim}
   var pessoa = {
     nome: ["",""],
+    idade: 32,
+    sexo: "masculino",
     ...
-
-
-
-
   }
 \end{verbatim}
 
+para acessarmos as propriedades e métodos de algum determinado objeto, devemos usar 
+a notação de ponto, que é uma notação que permite acessarmos essas informações dentro 
+do nosso objeto, como mostrado a seguir:
 
+\begin{verbatim}
+  pessoa.nome;
+  pessoa.sexo;
+\end{verbatim}
 
+Ooutra forma de notação existente e que podemos usar também é a notação de colchetes,
+onde especificamos que atributo específico do nosso objeto queremos modificar ou 
+acessar dizendo seu nome dentro dos colchentes, como mostrado a seguir:
 
+\begin{verbatim}
+  pessoa["nome"];
+  pessoa["sexo"];
+\end{verbatim}
 
-
-
+A vantagem da notação de colchete comparada a notação de ponto, é o fato de que a 
+notação de colchete permite a criação de um novo atrbituo e sua instanciação ao mesmo 
+tempo, sem a necessidade de recriar o objeto.
 % subsection Noções básicas de Objetos (end)
+
+\subsection{Escopo de Classe e de Instância} % (fold)
+\label{sub:Escopo de Classe e de Instância}
+Quando criamos um objeto dentro do jvascript, podemos ter variáveis as quais devem 
+pertencer a toda a classe, independente da instância, e podemos ter elementos os 
+quais necessitamos que eles possam possuir múltiplos valores, e que possam ser 
+acessados de forma individual, que são as variáveis de instância, elas podem ser 
+acessadas por meio da palavra chave \texttt{this}. 
+
+\begin{verbatim}
+  var pessoa = {
+    nome: "Chris";
+    saudacao: function(){
+      alert("Oi, meu nome é: " + this.nome + "!")
+    }
+  }
+\end{verbatim}
+% subsection Escopo de Classe e de Instância (end)
+
+\subsection{Protótipo de Objetos } % (fold)
+\label{sub:Protótipo de Objetos }
+
+% subsection Protótipo de Objetos  (end)
+
+
+
 % section Intodução a Objetos em JavaScript (end)
 
 

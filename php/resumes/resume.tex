@@ -1,0 +1,296 @@
+\documentclass[12pt a4paper]{paper}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\title{Estudo sobre o PHP}
+\author{1221194773 - João Vitor Rezende Moura}
+\date{12/2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+PHP(Preprocessador de Hypertexto) é uma linguagem de programação amplamente utilizada para desenvolvimento web, 
+principalmente dentro do HTML, embutido, e é uma linguagem de servidor, que também pode ter outros usos por ser de 
+propósito geral. Um exemplo de código PHP é o seguinte:
+
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página estudando php</title>  
+  </head>
+
+  <body>
+    <?php
+      echo "Hi, im a script!";
+    ?>
+  </body>
+</html>
+\end{verbatim}
+
+Em vez de um monte de comandos, podemos usar o PHP para usar código HTML, e dentro dele colocar o php embutido, para que 
+assim ele faça o processamento das informações igualmente, mas de forma muito mais arrumada, e eficiente.
+PHP é diferente de outras linguagens, e de tecnologias do client-side, como o JavaScript, porque ele é executado do 
+lado do servidor. gerando o HTML completo que será enviado ao cliente. Podemos imclusive configurar o servidor web para 
+processar todas as páginas html com php, e não será possível detectar sua presença pelo lado do usuário.
+
+
+\subsection{Principais áreas de uso do php}
+
+\subsection{Pré-requisitos}
+Para podermos fazer uso do php, precisamos ter um servidor o qual suporte essa linguagem, para que o desenvolvimento de 
+aplicações possa ser feito com ela de forma correta. Precisa-se instalar um web server com \textbf{Apache}, php e de 
+banco de dados, costuma-se utilizar o \textbf{MySQL}. Essas ferramentas possibilitam rodar o php, e possibiltiar o 
+armazenamento de dados que pode ser utilizado durante a construção da nossa aplicação, respectivamente.
+
+
+\subsection{Primeira aplicação PHP}
+
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP Test</title>
+    </head>
+    <body>
+        <?php echo '<p>Hello World</p>'; ?>
+    </body>
+</html>
+\end{verbatim}
+
+Esse código, permite que criemos um site HTML, e que dentro dele pré-processemos um código php que permite a criação de 
+um parágrafo html, o arquivo deve possuir o nome de \texttt{hello.php}, e podemos com isso, acessar ele dentro do nosso 
+navegador, que quando tiver o servidor rodando, pode ser acessado por meio de: \texttt{http://localhost/hello.php}
+
+
+
+\section{Conceitos Iniciais}
+
+\subsection{Tags PHP}
+As tags do PHP, são a forma de indicarmos para o processador do arquivo o qual estamos escrevendo, onde está o fim e o 
+início daquele determinado código php, pois elas rerpresentam a abertura e o fechamento, e são respectivamente
+\texttt{<?php} e \texttt{?>}. O PHP também inclui uma tag encurtada, que pode ser utilizada quando o único comando o 
+qual for utilizado dentro daquele determinado espaço é o echo, e essa tag se dá por \texttt{<?=}. Essas tags curtas estão habilitadas por padrão, mas podemos desabilitar elas por meio da diretira \textbf{short\_open\_tag}, presente dentro 
+do arquivo de configuração \textbf{\textit{php.ini}} com a configuração \textbf{--disable-short-tags}
+
+\subsection{Escapando HTML}
+Tudo fora do par de tags do PHP é ignorado pelo interpretador do php, e é entendido como HTML, possiblitano assim a 
+mistura dessas duas linguagens dentro do mesmo arquivo, oque pode ser muito útil na hora de criarmos templates. Isso fará
+com que o interpretador comece a repassar o conteúdo que encontre posteriormente à tag de fechamento, como html, a menos 
+que a instrução passada dentro do PHP seja uma condicional, como no exemplo a seguir:
+
+\begin{verbatim}
+<?php if ($expression == true): ?>
+  Isso irá aparecer se a expressão for verdadeira.
+<?php else: ?>
+  Senão isso irá aparecer.
+<?php endif; ?>
+\end{verbatim}
+
+
+\subsection{Separação de Instruções}
+Como em outras linguagens da mesma época que o PHP foi criado, as instruções devem ser divididas entre si por meio de 
+ponto e vírgula. A tag de fechamentod de um bloco de código PHP implica automaticamente em um ponto e vírgula.
+Um tipo especial de instrução são os comentários, os quais permitem que nos escrevamos informações úteis dentro do código
+, mas que não necessariamente vao ser processadas pelo interpretador e serem mostradas ao usuário, e esses comentários 
+podem ser feitos de três formas:
+
+\begin{itemize}
+    \item // - Comentários de linha única
+    \item /**/ - Comentários multilinha
+    \item \# - Comentários de linha única
+\end{itemize}
+
+\subsection{Tipos primitivos dentro do PHP}
+Os tipos primitivos são os tipos de dados que alguma variável ou informação dentro do código PHP pode assumir para si, 
+sendo os tipos primitivos da linguagem os seguintes:
+
+
+\begin{multicols}{3}
+\begin{itemize}
+    \item null
+    \item bool
+    \item int
+    \item float
+    \item string
+    \item array
+    \item object
+    \item callable
+    \item resource
+\end{itemize}
+\end{multicols}
+
+O PHP é linguagem com tipagem dinâmica, ou seja, por padrão não existe a necessidade de especificar o tipo da variável,
+ já que isso será determinado em tempo de execução. Entretanto, é possível de restringir estaticamente os tipos através 
+ da declaração desses tipos primitivos. Essas tipagens restrigem determinadas operações de serem feitas dentro do nosso 
+ código. Entretanto, uma expressão ou uma variável utilizada numa operação que o tipo não dê suporte, faz com que o 
+ interpretador tente transformar o valor em algum que permite a solução da operação.
+
+Para verificar o valor e o tipo de alguma determinada expressão, podemos usar a função \texttt{var\_dump()}, e para
+extrair o tipo de um variável, podemos usar \texttt{get\_debug\_type()}.
+
+\begin{verbatim}    
+<?php
+$a_bool = true;   // um valor boleano
+$a_str  = "foo";  // um texto
+$a_str2 = 'foo';  // um texto
+$an_int = 12;     // um inteiro
+
+echo get_debug_type($a_bool), "\n";
+echo get_debug_type($a_str), "\n";
+
+// Se essa variável conter um inteiro, aumento o número por quatro
+if (is_int($an_int)) {
+    $an_int += 4;
+}
+var_dump($an_int);
+
+// Se $a_bool for um texto, imprima
+if (is_string($a_bool)) {
+    echo "String: $a_bool";
+}
+?>
+\end{verbatim}
+
+As variáveis podem ter comportamentos e atributos específicos conforme o tipo primitivo o qual elas pertencem, 
+sendo assim, podemos entender de uma determinada maneira para cada tipo que elas podem possuir
+
+\subsubsection{Características e atributos dos tipos primitivos}
+Cada tipo primitivo possui sua peculiaridade específica, que pode ou não ser compartilhada com outros tipos, e temos 
+que são:
+
+\begin{itemize}
+    \item \textbf{null:} É o tipo unitário do PHP, pode apenas assumir o valor de nulo, e ele é designado para variáveis indefinidas e variáveis que passam pelo método \texttt{unset()}. 
+    \item \textbf{booleanos:} São variáveis que representam valores lógicas, ou seja, de verdadeiro ou falso.
+    \item \textbf{inteiros:} São variáveis as quais permite guardamos valores numéricos que não possuem casas decimais
+    \item \textbf{float:} São variáveis que assim como os inteiros, guardam valores numéricos, mas nesse tipo específico, elas podem asumir uma parte que é decimal dentro da sua informação.
+    \item \textbf{string:} É uma série de caracteres o qual um caractere é representado por um byte. Atualmente dentro do php, podem ser utilizados os dois tipos de aspas para definir uma string, e além disso, temos a sintaxe heredoc e temos a sintaxe nowdoc.
+    \item \textbf{strings numéricas:} Strings numéricas são strgins que podem ter seu conteúdo   
+    \item \textbf{array:} Um arrai pode ser entendido como um mapa ordenado, que define relação entre valores e suas respectivas chaves
+    \item \textbf{object:} São objetos, que são elementos presentes do paradigma orientado à objetos 
+    \item \textbf{callable:} 
+    \item \textbf{resource:} É uma variável especial que mantém uma referência a um recurso externo 
+\end{itemize}
+
+\subsubsection{Valores lógicos e numéricos} % (fold)
+\label{sec:Valores lógicos e numéricos}
+
+\paragraph{Valores Booleanos: } % (fold)
+\label{par:Valores Booleanos: }
+Dentro do PHP, podemos ter valores lógicos, ou seja, determinar uma variável com valor 
+de verdadeiro ou falso, comparar alguma variável com esse valor, ou modificar 
+expressões lógicas por meio desses valores, uma forma de ver isso dentro do PHP, é da 
+seguinte forma:
+
+\begin{verbatim}
+<?php
+  if($action == "mostrar_versao"){
+    echo "Versão 1.23";
+  }
+  if($exibir_comentários == TRUE){
+    echo "<hr>\n";
+  }
+?>  
+\end{verbatim}
+
+Nesse código podemos ver, que uma determinada parte dele compara o valor de uma 
+vaiável com um valor lógico booleano, vendo se é verdadeiro ou falsa necessidade de 
+exibir os comentários ad página. Entretanto, vemos que a estrutura condicional verifica 
+se uma comparação é verdadeira, com isso, não precisamos necessariamente fazer essa 
+comparação, podemos apenas colocar dentro da condicional o valor da variável em si. 
+
+\paragraph{Valores Inteiros:} % (fold)
+\label{par:Valores Inteiros:}
+Os valores inteiros são valores numéricos normais, os quais podem ser usados para 
+representar grandezas positivas ou negativas, ele pode especificar um valor de notação 
+decimal, hexadecimal e octal, além da base binária. Para poder usar essas notações 
+especiais, elas precisam ser especificadas durante a delacração das variáveis, da 
+seguinte forma:
+
+\begin{verbatim}
+<?php
+  $a = 123;
+  $b = 0o123;
+  $c = 0x1A;
+  $d = 0b11111111;
+  $e = 1_234_567;   
+?>  
+\end{verbatim}
+
+Em caso de números inteiros muito grandes, pode acontecer de surgi um overflow de
+números inteiros, oque transforma o valor inteiro em um valor flutuante automaticamente.
+
+\paragraph{Conversão para valores inteiros} % (fold)
+\label{par:Conversão para valores inteiros}
+Para converter os valores para números inteiros, temos que usar o comando \texttt{(int)}
+, também pode ser usada a função \texttt{intval()} para transformar o valor em inteiro. 
+
+\begin{verbatim}  
+  $a = ((int) False); // Convertendo o valor de booleano para decimal, nesse caso 0
+  $b = ((int) 8.1);
+  $c = ((int) 8.0);
+\end{verbatim}
+% paragraph Conversão para valores inteiros (end)
+
+
+\paragraph{Números de Ponto Flutuante} % (fold)
+\label{par:Números de Ponto Flutuante}
+Números de ponto flutuante podem ser entendidos como números decimais dentro do mundo 
+matemático. Eles possuem uma precisão limitada pelo compilador da linguagem quando usad 
+para valores muito pequenos.
+% paragraph {Números de Ponto Flutuante} (end)
+% subsubsection Valores lógicos e numéricos (end)
+
+\subsubsection{Strings} % (fold)
+\label{sec:Strings}
+Uma string pode ser considerada um conjunto de carecteres de que são armazenados de 
+forma sequêncial, sendo cada um deles representado por um byte específico. Temos a 
+construção das strings feita por meio de quatro meios, sendo eles:
+
+\begin{itemize}
+  \item aspas simples
+  \item aspas dulpas
+  \item sintexe heredoc 
+  \item sintexe nowdoc
+\end{itemize}
+
+As aspas simples, diferente das outras formas não possui escape de caracteres 
+especiais quando ocorrem dentro de sua delimitação.
+
+\paragraph{Heredoc} % (fold)
+\label{par:Heredoc}
+O heredoc é um operador, que funciona como um identificado que é seguido por uma nova 
+linha. A própria string é colocada em seguida e a seguir o mesmo identificador é usado 
+para finalizar. 
+
+\begin{verbatim}
+echo <<<END 
+    a
+  b
+c
+END;
+\end{verbatim}
+
+% paragraph Heredoc (end)
+
+
+\paragraph{Nowdoc} % (fold)
+\label{par:Nowdoc}
+
+% paragraph Nowdoc (end)
+
+
+
+
+
+
+
+
+
+
+
+% subsubsection Strings (end)
+
+\end{document}
+
