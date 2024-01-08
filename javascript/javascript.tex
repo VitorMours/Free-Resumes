@@ -487,11 +487,163 @@ acessadas por meio da palavra chave \texttt{this}.
 \end{verbatim}
 % subsection Escopo de Classe e de Instância (end)
 
-\subsection{Protótipo de Objetos } % (fold)
-\label{sub:Protótipo de Objetos }
+\subsection{Protótipo de Objetos} % (fold)
+\label{sub:Protótipo de Objetos}
+O objeto de protótipo de um objeto também ṕde ter um objeto de protótipo dentro do 
+JavaScript, do qual herda métodos e propriedades e assim por diante. Isso é chamado de 
+\textbf{cadeia de protótipos} e explica por que objetos diferentes têm propriedades 
+e métodos definidos em outros objetos disponíveis para eles.
+Quando temos objetos dentro do JavaScript, as propriedades e métodos são definidos na 
+propriedade \texttt{prototype} nas funções construtoras dos Objetos, não nas próprias 
+estâncias do objeto. 
 
-% subsection Protótipo de Objetos  (end)
+\subsubsection{Noções básicas sobre objetos de protótipos} % (fold)
+\label{sec:Noções básicas sobre objetos de protótipos}
 
+\begin{verbatim}
+function Person(first, last, age, gender, interests){
+  this.first = first;
+  this.last = last;
+  //...
+} 
+
+var person1 = Person(...);
+person1.valueOf();
+\end{verbatim}
+% subsubsection Noções básicas sobre objetos de protótipos (end)
+% subsection Protótipo de Objetos (end)
+
+
+\subsection{Herança em JavaScript} % (fold)
+\label{sub:Herança em JavaScript}
+Temos nessa seção, a utilização do objeto anteriormente citado, temos que os métodos 
+são todos definidos no protótipo do cosntrutor, e temos o seguinte exemplo:
+
+\begin{verbatim}
+function Person(first, last, age, gender, interests){
+  this.name = {first, last};
+  this.age = age;
+  this.gender = gender; 
+  tihs.interests = itnerests;
+}
+
+Person.prototype.greeting = function(){
+  alert("Him, i'm " +this.name.first + ".");
+}
+\end{verbatim}
+
+Com essa classe, podemos criar por exemplo, uma abstração mais específica dessa classe 
+dentro do nosso código, e isso pode ser feito por meio de herança. Isso existe dentro 
+do javascript, e pode ser feito da seguinte forma:
+
+\begin{verbatim}
+function Teacher(..., subject){
+  Person.call(...);
+  this.subject = subject;
+}  
+\end{verbatim}
+
+A função \texttt{call} ajuda a criar uma chamada de uma função definida em outro lugar,
+mas no contexto atual, é usada como uma forma de executar a herança das classes as quais
+possuímos.
+
+
+
+\subsubsection{Herdando construtor sem parâmetros} % (fold)
+\label{sec:Herdando construtor sem parâmetros}
+Se o cosntrutor o qual estamos herdando não tem valores de propriedade de parÇametros, 
+não precisamos especificar argumentos adicionais na função \texttt{call}
+% subsubsection Herdando construtor sem parâmetros (end)
+
+\subsubsection{Definindo o protótipo e referência de cosntrutor de subclasse.} % (fold)
+\label{sec:Definindo o protótipo e referência de cosntrutor de subclasse.}
+Quando herdamos uma classe, criamos um novo construtor, e dentro dele temos a 
+propriedade de prototipação. Dentro dessa propriedade, temos que esse novo construtor 
+por padrão contém uma referência à própria função construtora da super classe. Ele não 
+contém os métodos da propriedade da subclasse. Para resolver isso, podemos adicionar 
+a seguinte linha de código 
+
+\begin{verbatim}
+Teacher.prototype = Object.create(Person.prototype);
+\end{verbatim}
+% subsubsection Definindo o protótipo e referência de cosntrutor de subclasse. (end)
+% subsection Herança em JavaScript (end)
+
+\subsection{Classes Ecmascript 2015} % (fold)
+\label{sub:Classes Ecmascript 2015}
+Com a introdução da versão de ecmascript do ano de 2015, temos que a criação e uso de 
+classes pode ser feito da seguinte forma por meio da nova sintaxe:
+
+\begin{verbatim}
+class Person{
+  construtor(first, last, age, gender, interests){
+    this.name = {first, last};
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  }
+
+  greeting(){
+    console.log("Hi, i\'m ${this.name.first}");
+  }
+}  
+\end{verbatim}
+
+Com isso, outros conceitos de orientação a objetos também foram implementados para que 
+todo o escopo pudesse funcionar de forma síncrona e correta. Um desses elementos é a 
+herança, que pode ser usada dentro do javascript da seguinte maneira:
+
+\begin{verbatim}
+class Teacher extends Person {
+  constructor(first, last, age, gender, interests, subject, grade) {
+    super(first, last, age, gender, interests); 
+  }
+}
+\end{verbatim}
+
+Outro elemento importante da orientação a objeto, são getters e setters pois eles 
+permitem que modifiquemos propriedades das instâncias, e possamos verificar esses 
+valores.
+
+\begin{verbatim}
+class Teacher extends Person {
+  constructor(first, last, age, gender, interests, subject, grade) {
+    this.name = {
+      first,
+      last,
+    };
+
+    // ... 
+    
+    get subject(){
+      return this._subject;
+    }
+
+    set subject(newSubject){
+      this._subject = newSubject;
+    }
+  }
+}
+\end{verbatim}
+% subsection Classes Ecmascript 2015 (end)
+
+\subsection{Trabalhando com JSON} % (fold)
+\label{sub:Trabalhando com JSON}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% subsection Trabalhando com JSON (end)
 
 
 % section Intodução a Objetos em JavaScript (end)

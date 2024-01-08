@@ -409,10 +409,106 @@ podemos usar os arquivos por meio do comando:
 
 \subsection{usando o context para enviar dados para dentro dos templates} % (fold)
 \label{sub:usando o context para enviar dados para dentro dos templates}
+O context, é uma forma de passarmos informações entre os templates da nossa aplicação, 
+de forma correta, limpa, e rápida, e isso pode ser feito dentro do arquivo de 
+visualização dos templates do nosso app da seguinte forma:
+
+
+\paragraph{views.py} % (fold)
+\label{par:views.py}
+\begin{verbatim}
+from django.shortcuts import render 
+
+def home(request):
+  return render(
+            request,
+            'home/index.html',
+            {'text':'texto sendo passado pelo contexto'}
+  )
+\end{verbatim}
+
+
+\paragraph{index.html} % (fold)
+\label{par:index.html}
+\begin{verbatim}
+  <h1>{{ text }}</h1>
+\end{verbatim}
 
 % subsection usando o context para enviar dados para dentro dos templates (end)
 
+\subsection{URLs Dinâmicas} % (fold)
+\label{sub:URLs Dinâmicas}
+Dento do desenvolvimento web, podemos especificar links por meio dos seus endereços 
+de forma completa, entretanto o Django permite que nós façamos isso de forma dinâmica, 
+ou seja, possamos definir as URLs do nosso site de forma dinãmica, sem ter que especificar
+cada uma da das partes para cada um dos possíveis cenários existentes.
 
+Para fazermos isso dentro do Django de forma correta, podemos usar o seguinte código: 
+
+
+\paragraph{index.html} % (fold)
+\label{par:index.html} 
+\begin{verbatim}
+<nav>
+  <ul>
+    <li>
+      <a href=" {% url 'home' %}">Home</a>
+    </li>
+    <li>
+      <a href="{% url 'blog' %}">Blog</a>
+    </li>
+  </ul>
+</nav>
+\end{verbatim}
+
+\paragraph{urls.py} % (fold)
+\label{par:urls.py}
+\begin{verbatim}
+from django.urls import path
+from . import views 
+
+urlpatterns = [
+  path('', views.home, name="home")
+]
+\end{verbatim}
+
+Entretanto, podemos colocar para facilitar o entendimento quando tivermos estruturas 
+de páginas parecidas em diversas partes da aplicação, colocarmos namespaces dentro do 
+arquivo de visualizações, e assim dentro do link colocar o namespace, oque facilitaria 
+assim a construção da aplicaão quando formos dar o nome dos links, deixando eles de 
+forma mais lógica
+
+\paragraph{index.html} % (fold)
+\label{par:index.html}
+\begin{verbatim}
+  <nav>
+    <ul>
+      <li>
+        <a href="{% url "blog:home" %}">Home</a>
+      </li>
+    </ul>
+  </nav>
+\end{verbatim}
+% paragraph index.html (end)
+
+\paragraph{urls.py} % (fold)
+\label{par:urls.py}
+\begin{verbatim}
+from django.urls import path
+from . import views
+
+app_name = 'blog'
+urlpatterns = [
+  path('', views.home, name="home")
+]
+\end{verbatim}
+
+
+% paragraph urls.py (end)
+Agora podemos dizer sem medo que aqueler link é referente à pagina home do blog, 
+sem precisarmos fazer malabarismo com as nomeclaturas existentes, para que não haja 
+conflito nas URLs. 
+% subsection URLs Dinâmicas (end)
 
 
 \end{document}
